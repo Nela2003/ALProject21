@@ -120,7 +120,7 @@ table 50101 "NonConformance Doc Table"
     
     keys
     {
-        key(Key1; "No.")
+        key(Key1; "No.","CAQS Employee No.")
         {  
             Clustered = true;
         }
