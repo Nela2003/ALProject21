@@ -116,6 +116,16 @@ table 50101 "NonConformance Doc Table"
             DataClassification = ToBeClassified;
             
         }
+        field(19;"Company Name";Text[100]){
+
+        }
+        field(20;"Company Phone No.";Text[100]){
+
+        }
+        field(21;"Company's Email";Text[100]){
+            
+        }
+       
     }
     
     keys

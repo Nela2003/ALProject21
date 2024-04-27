@@ -8,7 +8,7 @@
         <ConnectString />
       </ConnectionProperties>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>b4cef7a8-5fa7-4bc1-a53b-1d4f35b2df05</rd:DataSourceID>
+      <rd:DataSourceID>f156608e-6625-4f04-9648-33b4c8931d23</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <ReportSections>
@@ -30,10 +30,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Company_Name</rd:DefaultName>
-            <Top>0.605in</Top>
-            <Left>0.43833in</Left>
+            <Top>0.105in</Top>
+            <Left>2.38in</Left>
             <Height>0.25in</Height>
-            <Width>1in</Width>
+            <Width>3.90833in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -44,25 +44,25 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Creation_Date">
+          <Textbox Name="Company_s_Email">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=First(Fields!Creation_Date.Value, "DataSet_Result")</Value>
+                    <Value>=First(Fields!Company_s_Email.Value, "DataSet_Result")</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Creation_Date</rd:DefaultName>
-            <Top>0.67167in</Top>
-            <Left>5.04667in</Left>
+            <rd:DefaultName>Company_s_Email</rd:DefaultName>
+            <Top>0.52167in</Top>
+            <Left>2.38in</Left>
             <Height>0.25in</Height>
-            <Width>1in</Width>
+            <Width>3.90833in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -74,25 +74,25 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Textbox3">
+          <Textbox Name="Company_Phone_No_">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Capital Resources SHPK</Value>
+                    <Value>=First(Fields!Company_Phone_No_.Value, "DataSet_Result")</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>0.38833in</Top>
-            <Left>2.43in</Left>
-            <Height>0.25in</Height>
-            <Width>1.75in</Width>
+            <rd:DefaultName>Company_Phone_No_</rd:DefaultName>
+            <Top>1.19667in</Top>
+            <Left>2.21333in</Left>
+            <Height>0.4in</Height>
+            <Width>4.075in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -104,233 +104,8 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Textbox4">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Nonconformance Quality Report</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox4</rd:DefaultName>
-            <Top>0.86333in</Top>
-            <Left>2.43in</Left>
-            <Height>0.325in</Height>
-            <Width>1.75in</Width>
-            <ZIndex>3</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox5">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Nonconformance Quality Report</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>1.98833in</Top>
-            <Left>0.47167in</Left>
-            <Height>0.38333in</Height>
-            <Width>2.275in</Width>
-            <ZIndex>4</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Line Name="Line1">
-            <Top>0.81333in</Top>
-            <Left>2.21333in</Left>
-            <Height>0in</Height>
-            <Width>2.41667in</Width>
-            <ZIndex>5</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Line Name="Line2">
-            <Top>0.41333in</Top>
-            <Left>2.205in</Left>
-            <Height>0.95in</Height>
-            <Width>0in</Width>
-            <ZIndex>6</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Line Name="Line3">
-            <Top>0.38833in</Top>
-            <Left>4.46333in</Left>
-            <Height>0.975in</Height>
-            <Width>0in</Width>
-            <ZIndex>7</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Textbox Name="Textbox6">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Fields!No_.Value</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>2.64667in</Top>
-            <Left>0.52167in</Left>
-            <Height>0.325in</Height>
-            <Width>0.91667in</Width>
-            <ZIndex>8</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox7">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>General</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox7</rd:DefaultName>
-            <Top>3.21333in</Top>
-            <Left>0.52167in</Left>
-            <Height>0.26667in</Height>
-            <Width>0.91667in</Width>
-            <ZIndex>9</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox8">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Nonconformity Details</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox8</rd:DefaultName>
-            <Top>5.99667in</Top>
-            <Left>0.67167in</Left>
-            <Height>0.31667in</Height>
-            <Width>2.54167in</Width>
-            <ZIndex>10</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox9">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Fields!Nonconformity_Description.Value</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>6.78in</Top>
-            <Left>0.62167in</Left>
-            <Height>0.425in</Height>
-            <Width>2.59167in</Width>
-            <ZIndex>11</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>10.91666in</Height>
+        <Height>2in</Height>
         <Style />
       </Body>
       <Width>6.5in</Width>
@@ -439,6 +214,51 @@
       </DefaultValue>
       <Prompt>Nonconformity_DescriptionCaption</Prompt>
     </ReportParameter>
+    <ReportParameter Name="Type_of_nonconformityCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Type_of_nonconformityCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Type_of_nonconformityCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Posting_DateCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Posting_DateCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Posting_DateCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Nonconformity_ReasonCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Nonconformity_ReasonCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Nonconformity_ReasonCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PenaltyCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PenaltyCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PenaltyCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Proposal_for_corrective_or_preventive_actionCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Proposal_for_corrective_or_preventive_actionCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Proposal_for_corrective_or_preventive_actionCaption</Prompt>
+    </ReportParameter>
     <ReportParameter Name="Company_NameCaption">
       <DataType>String</DataType>
       <DefaultValue>
@@ -448,11 +268,29 @@
       </DefaultValue>
       <Prompt>Company_NameCaption</Prompt>
     </ReportParameter>
+    <ReportParameter Name="Company_s_EmailCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Company_s_EmailCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Company_s_EmailCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Company_Phone_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Company_Phone_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Company_Phone_No_Caption</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>1</NumberOfColumns>
-      <NumberOfRows>12</NumberOfRows>
+      <NumberOfRows>19</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -512,7 +350,42 @@
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>11</RowIndex>
+          <ParameterName>Type_of_nonconformityCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>12</RowIndex>
+          <ParameterName>Posting_DateCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>13</RowIndex>
+          <ParameterName>Nonconformity_ReasonCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>14</RowIndex>
+          <ParameterName>PenaltyCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>15</RowIndex>
+          <ParameterName>Proposal_for_corrective_or_preventive_actionCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>16</RowIndex>
           <ParameterName>Company_NameCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>17</RowIndex>
+          <ParameterName>Company_s_EmailCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>18</RowIndex>
+          <ParameterName>Company_Phone_No_Caption</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
@@ -592,8 +465,29 @@ End Function
         <Field Name="Nonconformity_Description">
           <DataField>Nonconformity_Description</DataField>
         </Field>
+        <Field Name="Type_of_nonconformity">
+          <DataField>Type_of_nonconformity</DataField>
+        </Field>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
+        </Field>
+        <Field Name="Nonconformity_Reason">
+          <DataField>Nonconformity_Reason</DataField>
+        </Field>
+        <Field Name="Penalty">
+          <DataField>Penalty</DataField>
+        </Field>
+        <Field Name="Proposal_for_corrective_or_preventive_action">
+          <DataField>Proposal_for_corrective_or_preventive_action</DataField>
+        </Field>
         <Field Name="Company_Name">
           <DataField>Company_Name</DataField>
+        </Field>
+        <Field Name="Company_s_Email">
+          <DataField>Company_s_Email</DataField>
+        </Field>
+        <Field Name="Company_Phone_No_">
+          <DataField>Company_Phone_No_</DataField>
         </Field>
       </Fields>
       <Query>

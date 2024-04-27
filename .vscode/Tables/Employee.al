@@ -2,8 +2,8 @@ table 50100 "Employee Table"
 {
     DataClassification = ToBeClassified;
     Caption='Employee table';
-    LookupPageId="Employees List";
-    DrillDownPageId="Employees List";
+    // LookupPageId="Employees List";
+    // DrillDownPageId="Employees List";
 
     
     
