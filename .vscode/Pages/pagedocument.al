@@ -154,27 +154,83 @@ page 50100 "NonConformity Rep"
                     var
                         dt1:date;
                     begin
-                        if (Rec.Status=Rec.Status::Closed) then begin 
+                      
+                        if ((Rec.Status=Rec.Status::Closed)and (XRec.Status=xRec.Status::Open)) then begin 
+                            vlbool2:=false;
                           dt1:=System.Today();
                           Rec.Validate("Closing NonConformity Date",dt1);
-                        end 
-                    end;
+                        
+                        end
+                         else  if ((Rec.Status=Rec.Status::Open) and (XRec.Status=xRec.Status::Closed)   ) then begin
+                                vlbool2:=true;
+                                dt1:=0D;
+                                Rec.Validate("Closing NonConformity Date",dt1);
+                            
+                                Rec.Modify();
+                             end;
+                            end;
+                          
+
+                       
+                    
                 }
                 field("Closing NonConformity Date"; Rec."Closing NonConformity Date")
                 {
                     ApplicationArea = all;
 
-
+                   
                     
                     Editable = Vlbool2;
                     trigger OnValidate();
                     begin
-
+                        
+                
                         // Rec.Validate("Posting Date",Rec."Creation Date");
 
+                    // if Rec.Status=Rec.Status::Closed then begin
+                    //      Rec."Closing NonConformity Date":=System.Today();
+                    //    if Rec.Status=Rec.Status::Closed then   vlbool2 := false
+                    //      else vlbool2:=true;
 
-                        vlbool2 := false;
+
+                        //   if Rec.Status=Rec.Status::Closed then begin 
+                        //     Vlbool2:=false;
+                            
+                        //   end;
+                        //   if ((xRec.Status=xRec.Status::Closed) and  (Rec.Status=Rec.Status::Open))
+                        //   then Vlbool2:=true; 
+
+                    //     if ((XRec.Status=xRec.Status::Open) and (Rec.Status=Rec.Status::Closed)) then begin 
+                    //         clear(Vlbool2);
+                    //         vlbool2:=false;
+                    //     end
+
+                    //    else   if ((XRec.Status=xRec.Status::Closed) and (Rec.Status=Rec.Status::Open)) then begin 
+                    //         clear(Vlbool2);
+                    //         vlbool2:=true;
+                            
+                    //     end
+                       
+                    //    else Vlbool2:=true;
+                       
+                    //     Rec.Modify();
+                    // end
+                    //  if Rec.Status<>Rec.Status::Closed then  begin 
+                    //      Vlbool2:=true;
+                    //     Rec."Closing NonConformity Date":=0D;
+                    //     Rec.Modify(); 
+
+
+                    // if Rec.Status<>xRec.Status then begin 
+                    //     if Rec.Status=Rec.Status::Open then begin 
+                    //         Vlbool2:=true;
+                    //         Rec."Closing NonConformity Date":=0D;
+                    //         Rec.Modify();
+                    //     end
+                    // end
+                    
                     end;
+                    // end;
                 }
             }
 
@@ -210,7 +266,7 @@ page 50100 "NonConformity Rep"
                 ApplicationArea = all;
 
 
-                RunObject = Page "Responsible Employee Cardpart";
+                RunObject = Page "Responsible Employee";
                 ToolTip = 'Responsible Employee of the nonconformity';
             }
             action("&Print")
