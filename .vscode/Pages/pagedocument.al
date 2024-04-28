@@ -89,8 +89,23 @@ page 50100 "NonConformity Rep"
             group("Nonconformity Details")
             {
                 field("Item No."; Rec."Item No.")
-                {
+                {    TableRelation=Item."No.";
                     ApplicationArea = all;
+                  ////////////////
+
+
+                     trigger OnValidate();
+                    var
+                        Item: record Item;
+                    begin
+                        Item.SetRange("No.", Rec."Item No.");
+                        if Item.FindFirst() then begin
+                            description := Item.Description;
+
+                        end;
+                        Rec.Validate("Description", description);
+
+                    end;
                 }
                 field(Quantity; Rec.Quantity)
                 {
@@ -134,10 +149,32 @@ page 50100 "NonConformity Rep"
                 field(Status; Rec.Status)
                 {
                     ApplicationArea = all;
+
+                    trigger OnValidate()
+                    var
+                        dt1:date;
+                    begin
+                        if (Rec.Status=Rec.Status::Closed) then begin 
+                          dt1:=System.Today();
+                          Rec.Validate("Closing NonConformity Date",dt1);
+                        end 
+                    end;
                 }
                 field("Closing NonConformity Date"; Rec."Closing NonConformity Date")
                 {
                     ApplicationArea = all;
+
+
+                    
+                    Editable = Vlbool2;
+                    trigger OnValidate();
+                    begin
+
+                        // Rec.Validate("Posting Date",Rec."Creation Date");
+
+
+                        vlbool2 := false;
+                    end;
                 }
             }
 
@@ -216,6 +253,7 @@ page 50100 "NonConformity Rep"
         Vlera: Code[250];
         Vlbool2: boolean;
         dt: date;
+        description:text[100];
     // trigger OnAfterGetRecord();
     //     begin 
 
