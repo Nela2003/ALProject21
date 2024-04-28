@@ -141,13 +141,16 @@ page 50100 "NonConformity Rep"
                 }
             }
 
-            field("Company Name";Rec."Company Name"){
-              ApplicationArea = all;
+            field("Company Name"; Rec."Company Name")
+            {
+                ApplicationArea = all;
             }
-            field("Company's Email";Rec."Company's Email"){
-               ApplicationArea = all;
+            field("Company's Email"; Rec."Company's Email")
+            {
+                ApplicationArea = all;
             }
-            field("Company Phone No.";Rec."Company Phone No."){
+            field("Company Phone No."; Rec."Company Phone No.")
+            {
                 ApplicationArea = all;
             }
 
@@ -189,6 +192,20 @@ page 50100 "NonConformity Rep"
                 //      end;
                 RunObject = Report "Nonconformance Report";
             }
+            action("Open in Excel")
+            {
+                Image = Open;
+                ApplicationArea = all;
+                Promoted = true;
+                PromotedIsBig = true;
+
+                trigger OnAction()
+                var 
+                begin
+              ExportReport(Rec);
+                end;
+
+            }
 
         }
 
@@ -212,7 +229,8 @@ page 50100 "NonConformity Rep"
 
     //     end;
     trigger OnAfterGetRecord();
-    var CompanyInfo:Record "Company Information";
+    var
+        CompanyInfo: Record "Company Information";
     begin
         Rec."Creation Date" := System.WorkDate();
         //    dt:=Rec."Creation Date";
@@ -220,12 +238,38 @@ page 50100 "NonConformity Rep"
         Rec.Validate(Rec."Posting Date", Rec."Creation Date");
 
         ///
-        CompanyInfo.SetRange("Name",'CRONUS International Ltd.');
+        CompanyInfo.SetRange("Name", 'CRONUS International Ltd.');
         if CompanyInfo.FindFirst() then begin
-        Rec."Company Name":=CompanyInfo.Name;
-        Rec."Company's Email":=CompanyInfo."E-Mail";
-        Rec."Company Phone No.":=CompanyInfo."Phone No.";
+            Rec."Company Name" := CompanyInfo.Name;
+            Rec."Company's Email" := CompanyInfo."E-Mail";
+            Rec."Company Phone No." := CompanyInfo."Phone No.";
         end;
     end;
 
+
+
+    ///////
+    procedure ExportReport(var ReportRec :Record  "NonConformance Doc Table")
+var TempExcelBuffer:Record "Excel Buffer" temporary;
+     Reportlbl: label 'Report NonConformance';
+      ExcelFileName: label 'Report Nonconformance_%1_%2';
+       begin 
+   TempExcelBuffer.Reset();
+    TempExcelBuffer.DeleteAll();
+     TempExcelBuffer.NewRow();
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption("CAQS Employee"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+       ReportRec.SetRange("No.",Rec."No.");
+      if ReportRec.FindSet() then  begin repeat 
+TempExcelBuffer.NewRow();
+TempExcelBuffer.AddColumn(ReportRec."CAQS Employee",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text);
+until ReportRec.Next()=0;
+      end;
+
+      TempExcelBuffer.CreateNewBook(Reportlbl);
+      TempExcelBuffer.WriteSheet(Reportlbl,CompanyName,UserId);
+      TempExcelBuffer.CloseBook();
+      TempExcelBuffer.SetFriendlyFilename(StrSubstNo(ExcelFileName,CurrentDateTime,UserId));
+      TempExcelBuffer.OpenExcel();
+    
+       end;
 }
