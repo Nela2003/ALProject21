@@ -17,6 +17,12 @@ table 50103 "Responsible Employee table"
             DataClassification = ToBeClassified;
 
         }
+        field(3;"Report No.";Code[20]){
+                DataClassification = ToBeClassified; 
+                trigger OnValidate();begin
+                 Rec."Report No.":= NonConformance."No."; 
+                end;
+        }
     }
     
     keys
@@ -27,6 +33,7 @@ table 50103 "Responsible Employee table"
         }
     }
     
+    
     fieldgroups
     {
         // Add changes to field groups here
@@ -34,10 +41,12 @@ table 50103 "Responsible Employee table"
     
     var
         myInt: Integer;
+        NonConformance:Record "NonConformance Doc Table";
     
     trigger OnInsert()
+    var Nonconformance:Record "NonConformance Doc Table";
     begin
-        
+       Rec."Report No.":=Nonconformance."No." ;
     end;
     
     trigger OnModify()

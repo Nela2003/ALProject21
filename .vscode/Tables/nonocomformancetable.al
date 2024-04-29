@@ -125,6 +125,9 @@ table 50101 "NonConformance Doc Table"
         field(21;"Company's Email";Text[100]){
             
         }
+        field(22;"Picture";Blob){
+
+        }
        
     }
     

@@ -75,7 +75,33 @@ report 50100 "Nonconformance Report"
            column(Company_Phone_No_;"Company Phone No."){
                  IncludeCaption=true;
            }
-
+           column(Picture;Picture){
+            IncludeCaption=true;
+           }
+           column(Quantity;Quantity){
+            IncludeCaption=true;
+           }
+             dataitem("Responsible Employee table";"Responsible Employee table"){
+                DataItemTableView=sorting("No.");
+              DataItemLink= "Report No."=field("No."); 
+              column(EmployeeNo;"No."){
+                   IncludeCaption=true;
+              }
+              column(Employee;Employee){
+                IncludeCaption=true;
+              }
+              trigger OnPreDataItem();
+              var Responsibletemp:Record "Responsible Employee table" temporary;
+              begin 
+Responsibletemp.SetRange("Report No.","NonConformance Doc Table"."No.");
+if Responsibletemp.FindFirst() then begin repeat
+"Responsible Employee table"."No.":=Responsibletemp."No.";
+"Responsible Employee table".Employee:=Responsibletemp.Employee;
+       until Responsibletemp.Next()=0;  
+end;
+              end;
+              
+           }
            trigger OnAfterGetRecord();
                    var emri:Text[100];
                    CompInfo:Record "Company Information";
@@ -84,9 +110,13 @@ CompInfo.SetRange(Name,'CRONUS International Ltd.');
 IF CompInfo.FindFirst() then begin 
     "NonConformance Doc Table"."Company Name":=CompInfo.Name;
     "NonConformance Doc Table"."Company Phone No.":=CompInfo."Phone No.";
+    "NonConformance Doc Table".Picture :=CompInfo.Picture;
     
 end;
            end;
+
+
+      
            }
         //    column(Company_Name;"Company Name"){
         //      IncludeCaption=true;

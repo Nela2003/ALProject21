@@ -15,6 +15,13 @@ page 50100 "NonConformity Rep"
             {
                 Caption = 'No.';
                 ApplicationArea = all;
+                trigger OnValidate();
+                
+                begin
+                    if Rec."No."<>'' then 
+                 Responsibletable.Validate("Report No.",Rec."No.");
+                 Rec.Modify();
+                end;
 
             }
             group(General)
@@ -75,7 +82,7 @@ page 50100 "NonConformity Rep"
                     trigger OnValidate();
                     begin
 
-                        Rec."Creation Date" := System.WorkDate();
+                        Rec."Creation Date" := System.Today();
                         //    dt:=Rec."Creation Date";
 
                         Rec.Validate(Rec."Posting Date", Rec."Creation Date");
@@ -287,7 +294,7 @@ page 50100 "NonConformity Rep"
             }
             action("Open in Excel")
             {
-                Image = Open;
+                Image = Export;
                 ApplicationArea = all;
                 Promoted = true;
                 PromotedIsBig = true;
@@ -310,6 +317,7 @@ page 50100 "NonConformity Rep"
         Vlbool2: boolean;
         dt: date;
         description:text[100];
+         Responsibletable:Record "Responsible Employee table";
     // trigger OnAfterGetRecord();
     //     begin 
 
