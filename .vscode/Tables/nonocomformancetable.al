@@ -7,14 +7,8 @@ table 50101 "NonConformance Doc Table"
     { 
         field(1;"No."; Code[20])
         {  Caption='No.';
-        // AutoIncrement=true;
-   
-        
-         
-          
-        
-            
-        }
+    
+         }
          field(2;"Type of nonconformity"; Option)
         {
             DataClassification = ToBeClassified;
@@ -31,37 +25,18 @@ table 50101 "NonConformance Doc Table"
         {
             DataClassification = ToBeClassified;
             TableRelation="Employee"."No.";
-//                   trigger OnValidate();
-//              var Employee1:record Employee;
-//  begin
-//   Validate("CAQS Employee");
-//  end;
+
         }
         field(17; "CAQS Employee";Code[250])
         {
             DataClassification = ToBeClassified;
-//                         trigger OnValidate();
-//              var Employee1:record Employee;
-//  begin
-//  Employee1.SetRange("No.","CAQS Employee No.");
-//  if Employee1.FindFirst() then begin
-//     Employee1."Search Name":="CAQS Employee";
-//  end;
-//  end;
+
             
          
         }
         field(5;"Posting Date"; Date)
         {   
-            // Editable=true;
             
-            // DataClassification = ToBeClassified;
-            //  trigger OnValidate();
-            //     begin
-                 
-            //         Rec.Validate("Posting Date",Today);
-                   
-            //     end;
                 }
        
 
@@ -126,7 +101,8 @@ table 50101 "NonConformance Doc Table"
             
         }
         field(22;"Picture";Blob){
-
+              Subtype=Bitmap;
+              
         }
        
     }
@@ -146,11 +122,11 @@ table 50101 "NonConformance Doc Table"
     
     var
         myInt: Integer;
-        vlbool:Boolean;
-        NonConformanceSetup:record "Nonconformance Setup";
-        // dt:date;
+        // vlbool:Boolean;
+        // NonConformanceSetup:record "Nonconformance Setup";
+        
         NoseriesMgt:Codeunit NoSeriesManagement;
-        Noseries:record "No. Series";
+        // Noseries:record "No. Series";
         
     
     trigger OnInsert()
@@ -161,7 +137,7 @@ table 50101 "NonConformance Doc Table"
        "No.":=NoseriesMgt.GetNextNo(Setup."Nonconformance Nos.",WorkDate(),true);
       end;
       Rec."Creation Date":=System.WorkDate();
-        //    dt:=Rec."Creation Date";
+        
 
                 Rec.Validate(Rec."Posting Date",Rec."Creation Date");
     end;

@@ -66,7 +66,7 @@ page 50100 "NonConformity Rep"
                     trigger OnValidate();
                     begin
 
-                        // Rec.Validate("Posting Date",Rec."Creation Date");
+                      
 
 
                         vlbool2 := false;
@@ -83,22 +83,20 @@ page 50100 "NonConformity Rep"
                     begin
 
                         Rec."Creation Date" := System.Today();
-                        //    dt:=Rec."Creation Date";
+                     
 
                         Rec.Validate(Rec."Posting Date", Rec."Creation Date");
                     end;
 
                 }
             }
-            // part("Responsible Part";"Responsible Employee Cardpart"){
-            //     ApplicationArea=all;
-            // }
+            
             group("Nonconformity Details")
             {
                 field("Item No."; Rec."Item No.")
                 {    TableRelation=Item."No.";
                     ApplicationArea = all;
-                  ////////////////
+                 
 
 
                      trigger OnValidate();
@@ -188,71 +186,29 @@ page 50100 "NonConformity Rep"
                    
                     
                     Editable = Vlbool2;
-                    trigger OnValidate();
-                    begin
+                    // trigger OnValidate();
+                    // begin
                         
                 
-                        // Rec.Validate("Posting Date",Rec."Creation Date");
-
-                    // if Rec.Status=Rec.Status::Closed then begin
-                    //      Rec."Closing NonConformity Date":=System.Today();
-                    //    if Rec.Status=Rec.Status::Closed then   vlbool2 := false
-                    //      else vlbool2:=true;
-
-
-                        //   if Rec.Status=Rec.Status::Closed then begin 
-                        //     Vlbool2:=false;
-                            
-                        //   end;
-                        //   if ((xRec.Status=xRec.Status::Closed) and  (Rec.Status=Rec.Status::Open))
-                        //   then Vlbool2:=true; 
-
-                    //     if ((XRec.Status=xRec.Status::Open) and (Rec.Status=Rec.Status::Closed)) then begin 
-                    //         clear(Vlbool2);
-                    //         vlbool2:=false;
-                    //     end
-
-                    //    else   if ((XRec.Status=xRec.Status::Closed) and (Rec.Status=Rec.Status::Open)) then begin 
-                    //         clear(Vlbool2);
-                    //         vlbool2:=true;
-                            
-                    //     end
                        
-                    //    else Vlbool2:=true;
-                       
-                    //     Rec.Modify();
-                    // end
-                    //  if Rec.Status<>Rec.Status::Closed then  begin 
-                    //      Vlbool2:=true;
-                    //     Rec."Closing NonConformity Date":=0D;
-                    //     Rec.Modify(); 
-
-
-                    // if Rec.Status<>xRec.Status then begin 
-                    //     if Rec.Status=Rec.Status::Open then begin 
-                    //         Vlbool2:=true;
-                    //         Rec."Closing NonConformity Date":=0D;
-                    //         Rec.Modify();
-                    //     end
-                    // end
                     
-                    end;
                     // end;
+                   
                 }
             }
 
-            field("Company Name"; Rec."Company Name")
-            {
-                ApplicationArea = all;
-            }
-            field("Company's Email"; Rec."Company's Email")
-            {
-                ApplicationArea = all;
-            }
-            field("Company Phone No."; Rec."Company Phone No.")
-            {
-                ApplicationArea = all;
-            }
+            // field("Company Name"; Rec."Company Name")
+            // {
+            //     ApplicationArea = all;
+            // }
+            // field("Company's Email"; Rec."Company's Email")
+            // {
+            //     ApplicationArea = all;
+            // }
+            // field("Company Phone No."; Rec."Company Phone No.")
+            // {
+            //     ApplicationArea = all;
+            // }
 
             part("Report Lines"; "Report List ")
             {
@@ -272,9 +228,37 @@ page 50100 "NonConformity Rep"
                 PromotedIsBig = true;
                 ApplicationArea = all;
 
-
-                RunObject = Page "Responsible Employee";
+               
+              
                 ToolTip = 'Responsible Employee of the nonconformity';
+                trigger OnAction();
+           
+            var test:Record "Employee test";
+                begin 
+                    Responsibletable.SetRange("Report No.",Rec."No.");
+                    If Responsibletable.FindSet() then begin  repeat
+                       
+                           test."No.":=Responsibletable."No.";
+                           test.Employee:=Responsibletable.Employee;
+                           test.Insert();
+                           
+                           
+                        
+
+                      
+                        until Responsibletable.Next()=0;
+                  
+                    end;
+                  
+                    Page.Run(Page::"Responsible Employee",test);
+
+                      
+                end;
+                  
+                    
+                   
+           
+             
             }
             action("&Print")
             {
@@ -284,13 +268,9 @@ page 50100 "NonConformity Rep"
                 Promoted = true;
                 PromotedIsBig = true;
 
-                //     trigger OnAction();
-                //     var Report:Report "Nonconformance Report";
-
-                //     begin
-                //    Report.Run();
-                //      end;
+               
                 RunObject = Report "Nonconformance Report";
+                
             }
             action("Open in Excel")
             {
@@ -312,45 +292,38 @@ page 50100 "NonConformity Rep"
     }
 
     var
-        myInt: Integer;
+    
         Vlera: Code[250];
         Vlbool2: boolean;
         dt: date;
         description:text[100];
          Responsibletable:Record "Responsible Employee table";
-    // trigger OnAfterGetRecord();
-    //     begin 
-
-
-    //     Vlbool2:=Editable;
-
-    //    if Rec."Posting Date"<>0D then begin
-    //        vlbool2:=false;
-    //    end;
-    //    Editable:=Vlbool2;
-
-    //     end;
+        //  Response: Record "Responsible Employee table" temporary;
+         Employeetest:Record "Employee test";
+          
+   
     trigger OnAfterGetRecord();
-    var
-        CompanyInfo: Record "Company Information";
+    // var
+    //     CompanyInfo: Record "Company Information";
+        
     begin
         Rec."Creation Date" := System.WorkDate();
-        //    dt:=Rec."Creation Date";
+       
 
         Rec.Validate(Rec."Posting Date", Rec."Creation Date");
 
-        ///
-        CompanyInfo.SetRange("Name", 'CRONUS International Ltd.');
-        if CompanyInfo.FindFirst() then begin
-            Rec."Company Name" := CompanyInfo.Name;
-            Rec."Company's Email" := CompanyInfo."E-Mail";
-            Rec."Company Phone No." := CompanyInfo."Phone No.";
-        end;
+      
+        
+
+        Responsibletable.Validate("Report No.",Rec."No.");
+     
+        
     end;
+        
 
 
 
-    ///////
+  
     procedure ExportReport(var ReportRec :Record  "NonConformance Doc Table")
 var TempExcelBuffer:Record "Excel Buffer" temporary;
      Reportlbl: label 'Report NonConformance';
@@ -374,4 +347,23 @@ until ReportRec.Next()=0;
       TempExcelBuffer.OpenExcel();
     
        end;
+
+
+
+
+
+
+//        procedure CopyRows();
+// var
+
+// begin
+//   if Response.FindSet()then
+//    repeat
+//    Responsibletable.TransferFields(Response);
+//      Responsibletable."No." := Response."No.";
+//       Responsibletable.Employee:=Response.Employee;
+//   Responsibletable.Insert();
+//   until Response.Next()=0;
+// end;
+                     
 }

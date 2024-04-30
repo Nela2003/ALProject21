@@ -1,39 +1,30 @@
-table 50100 "Employee Table"
+table 50104 "Employee test"
 {
     DataClassification = ToBeClassified;
-    Caption='Employee table';
-    // LookupPageId="Employees List";
-    // DrillDownPageId="Employees List";
-
-    
     
     fields
     {
         field(1;"No."; Code[20])
         {
             DataClassification = ToBeClassified;
+            TableRelation=Employee."No.";
             
         }
-          field(2;"First Name"; Text[100])
-        {
-            DataClassification = ToBeClassified;
-            
+       
+        field(2;"Employee";Code[250]){
+
         }
-          field(3;"Last Name"; Text[100])
-        {
-            DataClassification = ToBeClassified;
-            
+        field(3;"Report No.";Code[20]){
+
         }
-          field(4;"Job Title"; Text[100])
-        {
-            DataClassification = ToBeClassified;
-            
+        field(4;"Line Nr";Integer){
+
         }
     }
     
     keys
     {
-        key(Key1; "No.","First Name","Last Name")
+        key(Key1; "Line Nr",Employee)
         {
             Clustered = true;
         }

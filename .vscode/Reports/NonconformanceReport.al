@@ -7,15 +7,13 @@ report 50100 "Nonconformance Report"
    RDLCLayout='.vscode\Layouts\NonconformanceReport.rdl';
     Caption='Nonconformance Report';
     
+    
     dataset
     {
         dataitem("NonConformance Doc Table";"NonConformance Doc Table")
         {  DataItemTableView=sorting("No.");
           RequestFilterFields="No.","CAQS Employee";
-
-
-        
-            column("No_"; "No.")
+           column("No_"; "No.")
             {
               IncludeCaption=true;  
             }
@@ -90,101 +88,61 @@ report 50100 "Nonconformance Report"
               column(Employee;Employee){
                 IncludeCaption=true;
               }
-              trigger OnPreDataItem();
-              var Responsibletemp:Record "Responsible Employee table" temporary;
-              begin 
-Responsibletemp.SetRange("Report No.","NonConformance Doc Table"."No.");
-if Responsibletemp.FindFirst() then begin repeat
-"Responsible Employee table"."No.":=Responsibletemp."No.";
-"Responsible Employee table".Employee:=Responsibletemp.Employee;
-       until Responsibletemp.Next()=0;  
-end;
-              end;
+            
+trigger OnAfterGetRecord()
+var
+    // myInt: Integer;
+    //  Test:Record "Employee test";
+    // Responsibletable:Record "Responsible Employee table";
+begin
+     
+           Responsibletable.SetRange("Report No.",Nr);
+                    If Responsibletable.FindSet() then begin  repeat
+                       
+                       "Responsible Employee table"."No.":=Responsibletable."No.";
+                       "Responsible Employee table".Employee:=Responsibletable.Employee;
+                            "Responsible Employee table".Insert(true);
               
+                    until Responsibletable.Next()=0;
+                    
+                    
+                  
+                    
+           end;           
+
+                        
+
+                        
+                       
+end;
+
            }
            trigger OnAfterGetRecord();
-                   var emri:Text[100];
-                   CompInfo:Record "Company Information";
+                //    var emri:Text[100];
+                  var CompInfo:Record "Company Information";
+                      Test:Record "Employee test";
+                      NonConformance:Record "NonConformance Doc Table";
            begin 
 CompInfo.SetRange(Name,'CRONUS International Ltd.');
 IF CompInfo.FindFirst() then begin 
     "NonConformance Doc Table"."Company Name":=CompInfo.Name;
     "NonConformance Doc Table"."Company Phone No.":=CompInfo."Phone No.";
+    CompInfo.CalcFields(Picture);
     "NonConformance Doc Table".Picture :=CompInfo.Picture;
-    
+ 
 end;
+   NonConformance.SetRange("No.","NonConformance Doc Table"."No.");
+   if NonConformance.FindFirst() then begin 
+          Nr:="NonConformance Doc Table"."No."
+
+        end;
+     
            end;
-
-
+      
+           
       
            }
-        //    column(Company_Name;"Company Name"){
-        //      IncludeCaption=true;
-        //    }
-        //    column(Company_Phone_No_;"Company Phone No."){
-        //      IncludeCaption=true;
-        //    }
-        //    column(Company_s_Email;"Company's Email"){
-        //       IncludeCaption=true;
-        //    }
-        //////////////////
-        // dataitem("Company Information";"Company Information"){
-        //     // column(){
-        //     //     IncludeCaption=true;
-             
-        //     // }
-        //     column(Name;Name){
-        //        IncludeCaption=true; 
-        //     }
-        //     column(Phone_No_;"Phone No."){
-        //      IncludeCaption=true; 
-        //     }
-        //     column(Address;Address){
-        //       IncludeCaption=true;
-        //     }
-        //     column(E_Mail;"E-Mail"){
-        //        IncludeCaption=true;
-        //     }
-        //     column(Picture;Picture){
-        //       IncludeCaption=true;
-        //     }  }
-            
-        }
-        // dataitem("Company Information";"Company Information"){
-        //     column("Company_Name";Name2){
-             
-        //     }
-        //     column(Phone_No_;"Phone No."){
-        //      IncludeCaption=true; 
-        //     }
-        //     column(Address;Address){
-        //       IncludeCaption=true;
-        //     }
-        //     column(E_Mail;"E-Mail"){
-        //        IncludeCaption=true;
-        //     }
-        //     column(Picture;CompanyInformationn.Picture){
-        //       IncludeCaption=true;
-        //     }  
-//             trigger OnPreDataItem();
-//     begin 
-//         "Company Information".SetRange("Name",'CRONUS International Ltd.');
-//         if "Company Information".FindFirst() then 
-//         Name2:="Company Information".Name;
-//     //     // // "Company Information".Get('CRONUS International Ltd.');
-//     //     CompanyInformationn.Name:="Company Information".Name;
-
-
-// // CompanyInformationn.SetRange("Name",'CRONUS International Ltd.');
-// //         if CompanyInformationn.FindFirst() then begin
-     
-// //         "Company Information".Name:=CompanyInformationn."Name";
-// //         "Company Information"."E-Mail":= CompanyInformationn."E-Mail";
-// //         "Company Information"."Phone No.":= CompanyInformationn."Phone No.";
-
-
-//         end;
-    // end;
+    }
     
     
     requestpage
@@ -195,11 +153,7 @@ end;
             {  
                 group(GroupName)
                 {
-                    // field(Name; SourceExpression)
-                    // {
-                    //     ApplicationArea = All;
-                        
-                    // }
+                    
                 }
                label("NonConformance Report"){
                 Caption='NonConformance Report';
@@ -215,17 +169,7 @@ end;
             }
         
     
-        // actions
-        // {
-        //     area(processing)
-        //     {
-        //         action(ActionName)
-        //         {
-        //             ApplicationArea = All;
-                    
-        //         }
-        //     }
-        // }
+       
     
     
     //rendering
@@ -238,64 +182,14 @@ end;
    // }
     
     var
-        myInt: Integer;
-
-    //    trigger OnPreReport()
-    //    var CompanyInfo:Record "Company Information";
     //     myInt: Integer;
-    //    begin
-    //      CompanyInfo.Get();
-         
+        Responsibletable:Record "Responsible Employee table";
+        Nr:code[20];
 
-    //    end; 
-    // trigger OnInitReport();
-    // var CompanyInfo:Record "Company Information";
-    //      NonConformancetab:Record "NonConformance Doc Table";
-    // begin
-        
+   
 
-      
-    //     ///
-    //     CompanyInfo.SetRange("Name",'CRONUS International Ltd.');
-    //     if CompanyInfo.FindFirst() then begin
-    //     "NonConformance Doc Table"."Company Name":=CompanyInfo.Name;
-    //     NonConformancetab."Company's Email":=CompanyInfo."E-Mail";
-    //     NonConformancetab."Company Phone No.":=CompanyInfo."Phone No.";
-        
-    //     end;
-    // end;
-  
-//     //     "Company Information".SetRange("Name",'CRONUS International Ltd.');
-//     //     if "Company Information".FindFirst() then 
-//     //     // // "Company Information".Get('CRONUS International Ltd.');
-//     //     CompanyInformationn.Name:="Company Information".Name;
-
-
-// CompanyInformationn.SetRange("Name",'CRONUS International Ltd.');
-//         if CompanyInformationn.FindFirst() then begin
-     
-//         "Company Information".Name:=CompanyInformationn."Name";
-//         "Company Information"."E-Mail":= CompanyInformationn."E-Mail";
-//         "Company Information"."Phone No.":= CompanyInformationn."Phone No.";
-
-//         end;
-
-
-trigger OnPreReport()
-// var CompInfo:Record "Company Information";
-//              emri:Text[100];
-           begin 
-CompInfo.SetRange(Name,'CRONUS International Ltd.');
-IF CompInfo.FindFirst() then begin 
-    "NonConformance Doc Table"."Company Name":=CompInfo.Name;
-    "NonConformance Doc Table"."Company Phone No.":=CompInfo."Phone No.";
-    
-end;
-           end;
-  
-
-var CompanyInformationn:Record  "Company Information";
-Name2:text[100];
-emri:text[100];
+// var CompanyInformationn:Record  "Company Information";
+// // Name2:text[100];
+// emri:text[100];
  CompInfo:Record "Company Information";
 }

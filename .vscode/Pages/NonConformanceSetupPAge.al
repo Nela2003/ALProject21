@@ -1,6 +1,5 @@
 page 50103 "NonConformance Setup"
-// CSD1.00 - 2018-01-01 - D. E. Veloper
-// Chapter 5 - Lab 2-3
+
 {
  PageType = Card;
  SourceTable ="Nonconformance Setup" ;

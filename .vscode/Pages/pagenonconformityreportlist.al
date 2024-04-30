@@ -52,10 +52,7 @@ page 50102 "Report List "
                }
             }
         }
-        // area(Factboxes)
-        // {
-            
-        // }
+        
     }
     
     actions

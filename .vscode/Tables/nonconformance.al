@@ -2,8 +2,8 @@ table 50103 "Responsible Employee table"
 {
     DataClassification = ToBeClassified;
     Caption='Responsible Employee';
-    LookupPageId="Employee List";
-    DrillDownPageId="Employee List";
+    LookupPageId="Responsible Employee";
+    DrillDownPageId="Responsible Employee";
     fields
     {
         field(1;"No."; Code[20])
@@ -19,15 +19,21 @@ table 50103 "Responsible Employee table"
         }
         field(3;"Report No.";Code[20]){
                 DataClassification = ToBeClassified; 
-                trigger OnValidate();begin
-                 Rec."Report No.":= NonConformance."No."; 
-                end;
+                // TableRelation="NonConformance Doc Table"."No.";
+                // trigger OnValidate();
+                // begin
+                // //  Rec."Report No.":= NonConformance."No."; 
+                // end;
         }
+      field(4;"Line Nr";Integer){
+        AutoIncrement=true;
+      }
+       
     }
     
     keys
     {
-        key(Key1;"No.")
+        key(Key1;"Line Nr")
         {
             Clustered = true;
         }
@@ -40,14 +46,14 @@ table 50103 "Responsible Employee table"
     }
     
     var
-        myInt: Integer;
-        NonConformance:Record "NonConformance Doc Table";
+        // myInt: Integer;
+        // NonConformance:Record "NonConformance Doc Table";
     
-    trigger OnInsert()
-    var Nonconformance:Record "NonConformance Doc Table";
-    begin
-       Rec."Report No.":=Nonconformance."No." ;
-    end;
+    // trigger OnInsert()
+    // var Nonconformance:Record "NonConformance Doc Table";
+    // begin
+    //    Rec."Report No.":=Nonconformance."No." ;
+    // end;
     
     trigger OnModify()
     begin

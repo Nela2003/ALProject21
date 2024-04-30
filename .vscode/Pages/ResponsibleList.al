@@ -2,10 +2,14 @@ page 50105 "Responsible Employee"
 {
     Caption = 'PageName';
     PageType = List;
-    CardPageId="Responsible Employee Cardpart";
+   
+
+    AutoSplitKey=true;
+   MultipleNewLines=true;
     UsageCategory = Lists;
     ApplicationArea = All;
-    SourceTable = "Responsible Employee table";
+    SourceTable = "Employee test" ;
+    
     
     layout
     {
@@ -15,6 +19,20 @@ page 50105 "Responsible Employee"
             {
                 field("No.";Rec."No."){
                     ApplicationArea=all;
+                    trigger OnValidate()
+                    var
+                        myInt: Integer;
+                        Employee1: record Employee;
+                    begin
+                       Employee1.SetRange("No.", Rec."No.");
+                        if Employee1.FindFirst() then begin
+                            Vlera := Employee1."Search Name";
+
+                        end;
+                        Rec.Validate(Rec."Employee", Vlera); 
+                    end;
+                      
+
                 }
                 field(Employee;Rec.Employee){
                     ApplicationArea=all;
@@ -22,10 +40,7 @@ page 50105 "Responsible Employee"
                 
             }
         }
-        area(Factboxes)
-        {
-            
-        }
+      
     }
     
     actions
@@ -43,4 +58,5 @@ page 50105 "Responsible Employee"
             }
         }
     }
+    var Vlera: Code[250];
 }
