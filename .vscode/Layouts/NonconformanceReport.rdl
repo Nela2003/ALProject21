@@ -1488,7 +1488,7 @@
             <Width>0.15833in</Width>
             <ZIndex>57</ZIndex>
             <Visibility>
-              <Hidden>=IIF(Fields!Penalty.Value=True,False,True)</Hidden>
+              <Hidden>=IIF(Fields!Penalty.Value=False,False,True)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1906,26 +1906,41 @@
                     <PaddingBottom>2pt</PaddingBottom>
                   </Style>
                 </Textbox>
-                <Textbox Name="Company_Phone_No_1">
+                <Image Name="Image4">
+                  <Source>Embedded</Source>
+                  <Value>=Fields!Picture.Value</Value>
+                  <Sizing>FitProportional</Sizing>
+                  <Top>0.05in</Top>
+                  <Left>0.325in</Left>
+                  <Height>0.20556in</Height>
+                  <Width>0.59167in</Width>
+                  <ZIndex>2</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Image>
+                <Textbox Name="Textbox39">
                   <CanGrow>true</CanGrow>
                   <KeepTogether>true</KeepTogether>
                   <Paragraphs>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>=First(Fields!Company_Phone_No_.Value, "DataSet_Result")</Value>
+                          <Value>=Fields!Company_s_Email.Value</Value>
                           <Style />
                         </TextRun>
                       </TextRuns>
                       <Style />
                     </Paragraph>
                   </Paragraphs>
-                  <rd:DefaultName>Company_Phone_No_1</rd:DefaultName>
-                  <Top>1.10833in</Top>
-                  <Left>0.18889in</Left>
-                  <Height>0.18056in</Height>
-                  <Width>1.09445in</Width>
-                  <ZIndex>2</ZIndex>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>1.11666in</Top>
+                  <Left>0.24167in</Left>
+                  <Height>0.24167in</Height>
+                  <Width>1.04167in</Width>
+                  <ZIndex>3</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -1936,21 +1951,6 @@
                     <PaddingBottom>2pt</PaddingBottom>
                   </Style>
                 </Textbox>
-                <Image Name="Image4">
-                  <Source>Embedded</Source>
-                  <Value>=Fields!Picture.Value</Value>
-                  <Sizing>FitProportional</Sizing>
-                  <Top>0.05in</Top>
-                  <Left>0.325in</Left>
-                  <Height>0.20556in</Height>
-                  <Width>0.59167in</Width>
-                  <ZIndex>3</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Image>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>0.17167in</Top>
