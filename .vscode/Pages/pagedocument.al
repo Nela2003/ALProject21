@@ -186,30 +186,12 @@ page 50100 "NonConformity Rep"
                    
                     
                     Editable = Vlbool2;
-                    // trigger OnValidate();
-                    // begin
-                        
-                
-                       
                     
-                    // end;
                    
                 }
             }
 
-            // field("Company Name"; Rec."Company Name")
-            // {
-            //     ApplicationArea = all;
-            // }
-            // field("Company's Email"; Rec."Company's Email")
-            // {
-            //     ApplicationArea = all;
-            // }
-            // field("Company Phone No."; Rec."Company Phone No.")
-            // {
-            //     ApplicationArea = all;
-            // }
-
+          
             part("Report Lines"; "Report List ")
             {
                 SubPageLink = "No." = field("No.");
@@ -332,11 +314,39 @@ var TempExcelBuffer:Record "Excel Buffer" temporary;
    TempExcelBuffer.Reset();
     TempExcelBuffer.DeleteAll();
      TempExcelBuffer.NewRow();
+     TempExcelBuffer.AddColumn(ReportRec.FieldCaption("Type of nonconformity"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+     TempExcelBuffer.AddColumn(ReportRec.FieldCaption("CAQS Employee No."),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
       TempExcelBuffer.AddColumn(ReportRec.FieldCaption("CAQS Employee"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption("Nonconformity Reason"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption("Posting Date"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption("Item No."),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption(Quantity),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption(Description),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption(Lot),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption("Proposal for corrective or preventive action"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption(Comments),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption(Penalty),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption("Actions taken"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption(Status),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.FieldCaption("Closing NonConformity Date"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
        ReportRec.SetRange("No.",Rec."No.");
       if ReportRec.FindSet() then  begin repeat 
 TempExcelBuffer.NewRow();
 TempExcelBuffer.AddColumn(ReportRec."CAQS Employee",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text);
+ TempExcelBuffer.AddColumn(ReportRec."CAQS Employee No.",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec."CAQS Employee",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec."Nonconformity Reason",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec."Posting Date",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Date  );
+      TempExcelBuffer.AddColumn(ReportRec."Item No.",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.Quantity,false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.Description,false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.Lot,false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec."Proposal for corrective or preventive action",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.Comments,false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.Penalty,false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec."Actions taken",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec.Status,false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
+      TempExcelBuffer.AddColumn(ReportRec."Closing NonConformity Date",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Date  );
 until ReportRec.Next()=0;
       end;
 
@@ -348,22 +358,5 @@ until ReportRec.Next()=0;
     
        end;
 
-
-
-
-
-
-//        procedure CopyRows();
-// var
-
-// begin
-//   if Response.FindSet()then
-//    repeat
-//    Responsibletable.TransferFields(Response);
-//      Responsibletable."No." := Response."No.";
-//       Responsibletable.Employee:=Response.Employee;
-//   Responsibletable.Insert();
-//   until Response.Next()=0;
-// end;
                      
 }

@@ -19,11 +19,7 @@ table 50103 "Responsible Employee table"
         }
         field(3;"Report No.";Code[20]){
                 DataClassification = ToBeClassified; 
-                // TableRelation="NonConformance Doc Table"."No.";
-                // trigger OnValidate();
-                // begin
-                // //  Rec."Report No.":= NonConformance."No."; 
-                // end;
+               
         }
       field(4;"Line Nr";Integer){
         AutoIncrement=true;
@@ -46,14 +42,7 @@ table 50103 "Responsible Employee table"
     }
     
     var
-        // myInt: Integer;
-        // NonConformance:Record "NonConformance Doc Table";
-    
-    // trigger OnInsert()
-    // var Nonconformance:Record "NonConformance Doc Table";
-    // begin
-    //    Rec."Report No.":=Nonconformance."No." ;
-    // end;
+       
     
     trigger OnModify()
     begin

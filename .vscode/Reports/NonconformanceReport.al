@@ -91,9 +91,7 @@ report 50100 "Nonconformance Report"
             
 trigger OnAfterGetRecord()
 var
-    // myInt: Integer;
-    //  Test:Record "Employee test";
-    // Responsibletable:Record "Responsible Employee table";
+    
 begin
      
            Responsibletable.SetRange("Report No.",Nr);
@@ -118,7 +116,7 @@ end;
 
            }
            trigger OnAfterGetRecord();
-                //    var emri:Text[100];
+                
                   var CompInfo:Record "Company Information";
                       Test:Record "Employee test";
                       NonConformance:Record "NonConformance Doc Table";
@@ -182,14 +180,8 @@ end;
    // }
     
     var
-    //     myInt: Integer;
+   
         Responsibletable:Record "Responsible Employee table";
         Nr:code[20];
-
-   
-
-// var CompanyInformationn:Record  "Company Information";
-// // Name2:text[100];
-// emri:text[100];
  CompInfo:Record "Company Information";
 }

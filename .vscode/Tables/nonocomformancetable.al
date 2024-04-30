@@ -122,14 +122,10 @@ table 50101 "NonConformance Doc Table"
     
     var
         myInt: Integer;
-        // vlbool:Boolean;
-        // NonConformanceSetup:record "Nonconformance Setup";
-        
-        NoseriesMgt:Codeunit NoSeriesManagement;
-        // Noseries:record "No. Series";
-        
     
-    trigger OnInsert()
+        NoseriesMgt:Codeunit NoSeriesManagement;
+      
+         trigger OnInsert()
     var Setup:Record "Nonconformance Setup";
     begin
       if "No."='' then begin 
