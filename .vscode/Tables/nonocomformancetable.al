@@ -3,10 +3,15 @@ table 50101 "NonConformance Doc Table"
     DataClassification = ToBeClassified;
      Caption='Nonconformance Doc table';
     
+      
+ 
+    
+      
+    
     fields
     { 
-        field(1;"No."; Code[20])
-        {  Caption='No.';
+        field(1;"No.."; Code[20])
+        {  Caption='No..';
     
          }
          field(2;"Type of nonconformity"; Option)
@@ -109,7 +114,7 @@ table 50101 "NonConformance Doc Table"
     
     keys
     {
-        key(Key1; "No.","CAQS Employee No.")
+        key(Key1; "No..","CAQS Employee No.","CAQS Employee")
         {  
             Clustered = true;
         }
@@ -124,18 +129,22 @@ table 50101 "NonConformance Doc Table"
         myInt: Integer;
     
         NoseriesMgt:Codeunit NoSeriesManagement;
+        Employee1:Record  "Employee test";
+        Kodi:Code[20];
       
          trigger OnInsert()
     var Setup:Record "Nonconformance Setup";
+    Employee:Record  "Employee test";
     begin
-      if "No."='' then begin 
+      if "No.."='' then begin 
         Setup.Get();
-       "No.":=NoseriesMgt.GetNextNo(Setup."Nonconformance Nos.",WorkDate(),true);
+       "No..":=NoseriesMgt.GetNextNo(Setup."Nonconformance Nos.",WorkDate(),true);
       end;
       Rec."Creation Date":=System.WorkDate();
         
-
                 Rec.Validate(Rec."Posting Date",Rec."Creation Date");
+
+                
     end;
     
     trigger OnModify()
@@ -152,4 +161,6 @@ table 50101 "NonConformance Doc Table"
     begin
         
     end;
+
+   
 }

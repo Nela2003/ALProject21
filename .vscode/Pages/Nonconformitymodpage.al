@@ -5,23 +5,20 @@ page 50100 "NonConformity Rep"
     UsageCategory = Administration;
     SourceTable = "NonConformance Doc Table";
     Caption = 'Nonconformance Quality Report';
+     DataCaptionFields="No..";
+   
+ 
 
     layout
     {
         area(Content)
         {
 
-            field("No."; Rec."No.")
+            field("No.."; Rec."No..")
             {
                 Caption = 'No.';
                 ApplicationArea = all;
-                trigger OnValidate();
                 
-                begin
-                    if Rec."No."<>'' then 
-                 Responsibletable.Validate("Report No.",Rec."No.");
-                 Rec.Modify();
-                end;
 
             }
             group(General)
@@ -194,7 +191,7 @@ page 50100 "NonConformity Rep"
           
             part("Report Lines"; "Report List ")
             {
-                SubPageLink = "No." = field("No.");
+                SubPageLink = "No.." = field("No..");
             }
         }
     }
@@ -210,33 +207,10 @@ page 50100 "NonConformity Rep"
                 PromotedIsBig = true;
                 ApplicationArea = all;
 
-               
+               Runobject=Page "Responsible Employee";
+               RunPageLink="No.."=field("No..");
               
                 ToolTip = 'Responsible Employee of the nonconformity';
-                trigger OnAction();
-           
-            var test:Record "Employee test";
-                begin 
-                    Responsibletable.SetRange("Report No.",Rec."No.");
-                    If Responsibletable.FindSet() then begin  repeat
-                       
-                           test."No.":=Responsibletable."No.";
-                           test.Employee:=Responsibletable.Employee;
-                           test.Insert();
-                           
-                           
-                        
-
-                      
-                        until Responsibletable.Next()=0;
-                  
-                    end;
-                  
-                    Page.Run(Page::"Responsible Employee",test);
-
-                      
-                end;
-                  
                     
                    
            
@@ -251,7 +225,17 @@ page 50100 "NonConformity Rep"
                 PromotedIsBig = true;
 
                
-                RunObject = Report "Nonconformance Report";
+                
+             trigger OnAction()
+                var
+                    IsHandled: Boolean;
+                begin
+                    Nonconformance := Rec;
+                    CurrPage.SetSelectionFilter(Nonconformance);
+                    Report.Run(50100,true,true,Nonconformance);
+                  
+                end;
+                
                 
             }
             action("Open in Excel")
@@ -280,13 +264,15 @@ page 50100 "NonConformity Rep"
         dt: date;
         description:text[100];
          Responsibletable:Record "Responsible Employee table";
-        //  Response: Record "Responsible Employee table" temporary;
+        
          Employeetest:Record "Employee test";
+         Nonconformance:Record "NonConformance Doc Table";
+         
+         
           
    
     trigger OnAfterGetRecord();
-    // var
-    //     CompanyInfo: Record "Company Information";
+   
         
     begin
         Rec."Creation Date" := System.WorkDate();
@@ -297,7 +283,7 @@ page 50100 "NonConformity Rep"
       
         
 
-        Responsibletable.Validate("Report No.",Rec."No.");
+        
      
         
     end;
@@ -329,7 +315,7 @@ var TempExcelBuffer:Record "Excel Buffer" temporary;
       TempExcelBuffer.AddColumn(ReportRec.FieldCaption("Actions taken"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
       TempExcelBuffer.AddColumn(ReportRec.FieldCaption(Status),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
       TempExcelBuffer.AddColumn(ReportRec.FieldCaption("Closing NonConformity Date"),false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text  );
-       ReportRec.SetRange("No.",Rec."No.");
+       ReportRec.SetRange("No..",Rec."No..");
       if ReportRec.FindSet() then  begin repeat 
 TempExcelBuffer.NewRow();
 TempExcelBuffer.AddColumn(ReportRec."CAQS Employee",false,'',false,false,false,'',TempExcelBuffer."Cell Type"::Text);
@@ -358,5 +344,21 @@ until ReportRec.Next()=0;
     
        end;
 
-                     
+
+
+
+
+       
+
+
+
+
+   
+
+
+
+
+
+
+                   
 }

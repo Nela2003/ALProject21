@@ -8,12 +8,15 @@ report 50100 "Nonconformance Report"
     Caption='Nonconformance Report';
     
     
+    
     dataset
     {
         dataitem("NonConformance Doc Table";"NonConformance Doc Table")
-        {  DataItemTableView=sorting("No.");
-          RequestFilterFields="No.","CAQS Employee";
-           column("No_"; "No.")
+        {  DataItemTableView=sorting("No..");
+          RequestFilterFields="No..","CAQS Employee";
+           
+              RequestFilterHeading = 'NonConformance Doc Table';
+           column("No_"; "No..")
             {
               IncludeCaption=true;  
             }
@@ -79,9 +82,9 @@ report 50100 "Nonconformance Report"
            column(Quantity;Quantity){
             IncludeCaption=true;
            }
-             dataitem("Responsible Employee table";"Responsible Employee table"){
+             dataitem("Employee test";"Employee test"){
                 DataItemTableView=sorting("No.");
-              DataItemLink= "Report No."=field("No."); 
+              DataItemLink= "No.."=field("No.."); 
               column(EmployeeNo;"No."){
                    IncludeCaption=true;
               }
@@ -89,30 +92,7 @@ report 50100 "Nonconformance Report"
                 IncludeCaption=true;
               }
             
-trigger OnAfterGetRecord()
-var
-    
-begin
-     
-           Responsibletable.SetRange("Report No.",Nr);
-                    If Responsibletable.FindSet() then begin  repeat
-                       
-                       "Responsible Employee table"."No.":=Responsibletable."No.";
-                       "Responsible Employee table".Employee:=Responsibletable.Employee;
-                            "Responsible Employee table".Insert(true);
-              
-                    until Responsibletable.Next()=0;
-                    
-                    
-                  
-                    
-           end;           
 
-                        
-
-                        
-                       
-end;
 
            }
            trigger OnAfterGetRecord();
@@ -130,9 +110,9 @@ IF CompInfo.FindFirst() then begin
     "NonConformance Doc Table".Picture :=CompInfo.Picture;
  
 end;
-   NonConformance.SetRange("No.","NonConformance Doc Table"."No.");
+   NonConformance.SetRange("No..","NonConformance Doc Table"."No..");
    if NonConformance.FindFirst() then begin 
-          Nr:="NonConformance Doc Table"."No."
+          Nr:="NonConformance Doc Table"."No.."
 
         end;
      
@@ -145,15 +125,12 @@ end;
     
     
     requestpage
-    {
+    {      SaveValues = true;
         layout
         {
             area(Content)
             {  
-                group(GroupName)
-                {
-                    
-                }
+          
                label("NonConformance Report"){
                 Caption='NonConformance Report';
                }
@@ -164,7 +141,12 @@ end;
         
             }
             
-       
+       trigger OnAfterGetCurrRecord()
+       var
+          myInt: Integer;
+       begin
+           
+       end;
             }
         
     

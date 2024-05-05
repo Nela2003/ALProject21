@@ -14,7 +14,7 @@ page 50102 "Report List "
         {
             repeater(GroupName)
             {
-               field("No.";Rec."No."){
+               field("No.";Rec."No.."){
                 Applicationarea=all;
                }
                field("CAQS Employee";Rec."CAQS Employee"){

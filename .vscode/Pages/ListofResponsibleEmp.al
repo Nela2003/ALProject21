@@ -1,10 +1,12 @@
-page 50105 "Responsible Employee"
+page 50101 "Responsible Employee"
 {
     Caption = 'PageName';
     PageType = List;
+    DataCaptionFields="No..";
+  
    
 
-    AutoSplitKey=true;
+    AutoSplitKey=false;
    MultipleNewLines=true;
     UsageCategory = Lists;
     ApplicationArea = All;
@@ -37,6 +39,13 @@ page 50105 "Responsible Employee"
                 field(Employee;Rec.Employee){
                     ApplicationArea=all;
                 }
+                field(Date;Rec.Date){
+                    ApplicationArea=all;
+                }
+                field("Report No.";Rec."No.."){
+                   
+                    ApplicationArea=all;
+                }
                 
             }
         }
@@ -55,8 +64,24 @@ page 50105 "Responsible Employee"
                 begin
                     
                 end;
+
+
+
+                
             }
         }
     }
     var Vlera: Code[250];
+
+
+     trigger OnNewRecord(BelowxRec:Boolean)
+ var
+    myInt: Integer;
+ begin
+    Rec.SetupNewLine;
+ end;
+
+
+
+
 }

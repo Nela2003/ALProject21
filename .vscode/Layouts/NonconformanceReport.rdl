@@ -16,8 +16,8 @@
       <Body>
         <ReportItems>
           <Line Name="Line1">
-            <Top>0.2in</Top>
-            <Left>0.03in</Left>
+            <Top>1.313in</Top>
+            <Left>0.20833in</Left>
             <Height>0in</Height>
             <Width>6.47in</Width>
             <Style>
@@ -37,7 +37,7 @@
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Times New Roman</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontSize>9pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                       <TextDecoration>None</TextDecoration>
                       <Color>#000000</Color>
@@ -48,10 +48,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox8</rd:DefaultName>
-            <Top>0.46667in</Top>
-            <Left>0.09667in</Left>
-            <Height>0.25in</Height>
-            <Width>2.49722in</Width>
+            <Top>1.36855in</Top>
+            <Left>0.32333in</Left>
+            <Height>0.20833in</Height>
+            <Width>1.74113in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -71,17 +71,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=First(Fields!No_.Value, "DataSet_Result")</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>No_</rd:DefaultName>
-            <Top>1in</Top>
-            <Left>0.11333in</Left>
-            <Height>0.25in</Height>
-            <Width>1.01667in</Width>
+            <Top>1.64633in</Top>
+            <Left>0.32333in</Left>
+            <Height>0.175in</Height>
+            <Width>0.78334in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -94,7 +97,8 @@
             </Style>
           </Textbox>
           <Line Name="Line3">
-            <Top>1.55833in</Top>
+            <Top>2.0991in</Top>
+            <Left>0.17833in</Left>
             <Height>0in</Height>
             <Width>6.5in</Width>
             <ZIndex>3</ZIndex>
@@ -112,17 +116,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>General</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox10</rd:DefaultName>
-            <Top>1.31944in</Top>
-            <Left>0.11333in</Left>
-            <Height>0.19722in</Height>
-            <Width>1.28334in</Width>
+            <Top>1.87688in</Top>
+            <Left>0.30111in</Left>
+            <Height>0.18055in</Height>
+            <Width>1.09391in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -142,17 +149,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!Type_of_nonconformityCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Type_of_nonconformityCaption</rd:DefaultName>
-            <Top>1.75in</Top>
-            <Left>0.11333in</Left>
-            <Height>0.25in</Height>
-            <Width>1.72501in</Width>
+            <Top>2.16854in</Top>
+            <Left>0.28499in</Left>
+            <Height>0.24167in</Height>
+            <Width>1.76333in</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
@@ -165,8 +175,8 @@
             </Style>
           </Textbox>
           <Line Name="Line4">
-            <Top>1.89167in</Top>
-            <Left>1.905in</Left>
+            <Top>2.27222in</Top>
+            <Left>2.03499in</Left>
             <Height>0in</Height>
             <Width>0.29167in</Width>
             <ZIndex>6</ZIndex>
@@ -196,15 +206,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Type_of_nonconformity.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox12</rd:DefaultName>
-            <Top>1.75833in</Top>
-            <Left>2.24667in</Left>
+            <Top>2.16854in</Top>
+            <Left>2.3689in</Left>
             <Height>0.24167in</Height>
             <Width>1.08333in</Width>
             <ZIndex>7</ZIndex>
@@ -226,17 +239,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!CAQS_EmployeeCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
-            <Top>2.275in</Top>
-            <Left>0.11333in</Left>
+            <Top>2.45188in</Top>
+            <Left>0.30111in</Left>
             <Height>0.25in</Height>
-            <Width>1.72501in</Width>
+            <Width>1.75835in</Width>
             <ZIndex>8</ZIndex>
             <Style>
               <Border>
@@ -249,10 +265,10 @@
             </Style>
           </Textbox>
           <Line Name="Line5">
-            <Top>2.4in</Top>
-            <Left>1.88in</Left>
+            <Top>2.58334in</Top>
+            <Left>2.09502in</Left>
             <Height>0in</Height>
-            <Width>0.31667in</Width>
+            <Width>0.19167in</Width>
             <ZIndex>9</ZIndex>
             <Style>
               <Border>
@@ -280,15 +296,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!CAQS_Employee.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox14</rd:DefaultName>
-            <Top>2.26667in</Top>
-            <Left>2.24667in</Left>
+            <Top>2.47966in</Top>
+            <Left>2.3689in</Left>
             <Height>0.25833in</Height>
             <Width>1.08333in</Width>
             <ZIndex>10</ZIndex>
@@ -310,15 +329,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!Nonconformity_ReasonCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.75833in</Top>
-            <Left>3.63833in</Left>
+            <Top>2.16854in</Top>
+            <Left>3.77386in</Left>
             <Height>0.24167in</Height>
             <Width>1.075in</Width>
             <ZIndex>11</ZIndex>
@@ -340,17 +362,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!Posting_DateCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Top>2.275in</Top>
-            <Left>3.63833in</Left>
+            <Top>2.47966in</Top>
+            <Left>3.79333in</Left>
             <Height>0.25in</Height>
-            <Width>1.075in</Width>
+            <Width>1.03333in</Width>
             <ZIndex>12</ZIndex>
             <Style>
               <Border>
@@ -363,8 +388,8 @@
             </Style>
           </Textbox>
           <Line Name="Line6">
-            <Top>1.90833in</Top>
-            <Left>4.73in</Left>
+            <Top>2.27222in</Top>
+            <Left>4.8817in</Left>
             <Height>0in</Height>
             <Width>0.30833in</Width>
             <ZIndex>13</ZIndex>
@@ -387,8 +412,8 @@
             </Style>
           </Line>
           <Line Name="Line7">
-            <Top>2.40833in</Top>
-            <Left>4.72167in</Left>
+            <Top>2.58334in</Top>
+            <Left>4.8817in</Left>
             <Height>0in</Height>
             <Width>0.31667in</Width>
             <ZIndex>14</ZIndex>
@@ -418,15 +443,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Nonconformity_Reason.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox17</rd:DefaultName>
-            <Top>1.79167in</Top>
-            <Left>5.155in</Left>
+            <Top>2.16854in</Top>
+            <Left>5.30666in</Left>
             <Height>0.20833in</Height>
             <Width>1.04167in</Width>
             <ZIndex>15</ZIndex>
@@ -448,15 +476,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Posting_Date.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox18</rd:DefaultName>
-            <Top>2.26667in</Top>
-            <Left>5.18in</Left>
+            <Top>2.47966in</Top>
+            <Left>5.30666in</Left>
             <Height>0.25833in</Height>
             <Width>1.01667in</Width>
             <ZIndex>16</ZIndex>
@@ -477,17 +508,31 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Responsible Employee</Value>
+                    <Value>Responsible</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value xml:space="preserve"> </Value>
                     <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>Employee</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>2.98333in</Top>
-            <Left>0.11333in</Left>
-            <Height>0.25in</Height>
+            <Top>2.77133in</Top>
+            <Left>0.32333in</Left>
+            <Height>0.2in</Height>
             <Width>1.72501in</Width>
             <ZIndex>17</ZIndex>
             <Style>
@@ -501,8 +546,8 @@
             </Style>
           </Textbox>
           <Line Name="Line8">
-            <Top>5.125in</Top>
-            <Left>0.06in</Left>
+            <Top>3.84077in</Top>
+            <Left>0.14666in</Left>
             <Height>0in</Height>
             <Width>6.47in</Width>
             <ZIndex>18</ZIndex>
@@ -519,16 +564,30 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Nonconformity Details</Value>
+                    <Value>Nonconformity</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value xml:space="preserve"> </Value>
                     <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>Details</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox22</rd:DefaultName>
-            <Top>4.75833in</Top>
-            <Left>0.11333in</Left>
+            <Top>3.56299in</Top>
+            <Left>0.30111in</Left>
             <Height>0.25in</Height>
             <Width>2.20001in</Width>
             <ZIndex>19</ZIndex>
@@ -550,15 +609,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!Item_No_Caption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox23</rd:DefaultName>
-            <Top>5.59167in</Top>
-            <Left>0.205in</Left>
+            <Top>3.91021in</Top>
+            <Left>0.28499in</Left>
             <Height>0.25in</Height>
             <Width>0.925in</Width>
             <ZIndex>20</ZIndex>
@@ -573,8 +635,8 @@
             </Style>
           </Textbox>
           <Line Name="Line9">
-            <Top>5.725in</Top>
-            <Left>1.16333in</Left>
+            <Top>4.01577in</Top>
+            <Left>1.24in</Left>
             <Height>0in</Height>
             <Width>0.51667in</Width>
             <ZIndex>21</ZIndex>
@@ -604,15 +666,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!QuantityCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox24</rd:DefaultName>
-            <Top>6.33333in</Top>
-            <Left>0.205in</Left>
+            <Top>4.20188in</Top>
+            <Left>0.28499in</Left>
             <Height>0.25in</Height>
             <Width>0.925in</Width>
             <ZIndex>22</ZIndex>
@@ -627,8 +692,8 @@
             </Style>
           </Textbox>
           <Line Name="Line10">
-            <Top>6.5in</Top>
-            <Left>1.18833in</Left>
+            <Top>4.29911in</Top>
+            <Left>1.23724in</Left>
             <Height>0in</Height>
             <Width>0.49167in</Width>
             <ZIndex>23</ZIndex>
@@ -658,15 +723,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Item_No_.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>5.59167in</Top>
-            <Left>1.78833in</Left>
+            <Top>3.91021in</Top>
+            <Left>1.86221in</Left>
             <Height>0.25in</Height>
             <Width>0.91667in</Width>
             <ZIndex>24</ZIndex>
@@ -688,17 +756,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Quantity.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox26</rd:DefaultName>
-            <Top>6.31667in</Top>
-            <Left>1.76333in</Left>
-            <Height>0.26667in</Height>
-            <Width>0.94167in</Width>
+            <Top>4.22966in</Top>
+            <Left>1.86221in</Left>
+            <Height>0.22222in</Height>
+            <Width>0.91667in</Width>
             <ZIndex>25</ZIndex>
             <Style>
               <Border>
@@ -718,15 +789,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!DescriptionCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox27</rd:DefaultName>
-            <Top>5.59167in</Top>
-            <Left>3.24667in</Left>
+            <Top>3.91021in</Top>
+            <Left>3.50667in</Left>
             <Height>0.25in</Height>
             <Width>1.04167in</Width>
             <ZIndex>26</ZIndex>
@@ -741,8 +815,8 @@
             </Style>
           </Textbox>
           <Line Name="Line11">
-            <Top>5.73333in</Top>
-            <Left>4.34667in</Left>
+            <Top>4.13334in</Top>
+            <Left>4.59001in</Left>
             <Height>0in</Height>
             <Width>0.36666in</Width>
             <ZIndex>27</ZIndex>
@@ -779,10 +853,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>5.59167in</Top>
-            <Left>4.84667in</Left>
-            <Height>0.25in</Height>
-            <Width>0.96667in</Width>
+            <Top>3.87687in</Top>
+            <Left>5.0372in</Left>
+            <Height>0.28334in</Height>
+            <Width>1.32501in</Width>
             <ZIndex>28</ZIndex>
             <Style>
               <Border>
@@ -802,16 +876,19 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!LotCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox29</rd:DefaultName>
-            <Top>6.31667in</Top>
-            <Left>3.26333in</Left>
-            <Height>0.26667in</Height>
+            <Top>4.26667in</Top>
+            <Left>3.52333in</Left>
+            <Height>0.18521in</Height>
             <Width>1.02501in</Width>
             <ZIndex>29</ZIndex>
             <Style>
@@ -825,8 +902,8 @@
             </Style>
           </Textbox>
           <Line Name="Line12">
-            <Top>6.46667in</Top>
-            <Left>4.32167in</Left>
+            <Top>4.39722in</Top>
+            <Left>4.56501in</Left>
             <Height>0in</Height>
             <Width>0.39166in</Width>
             <ZIndex>30</ZIndex>
@@ -856,16 +933,19 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Lot.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox30</rd:DefaultName>
-            <Top>6.31667in</Top>
-            <Left>4.83in</Left>
-            <Height>0.26667in</Height>
+            <Top>4.22966in</Top>
+            <Left>5.08057in</Left>
+            <Height>0.22222in</Height>
             <Width>0.98333in</Width>
             <ZIndex>31</ZIndex>
             <Style>
@@ -879,8 +959,8 @@
             </Style>
           </Textbox>
           <Line Name="Line13">
-            <Top>7.26667in</Top>
-            <Left>0.03833in</Left>
+            <Top>5.05199in</Top>
+            <Left>0.12166in</Left>
             <Height>0in</Height>
             <Width>6.46167in</Width>
             <ZIndex>32</ZIndex>
@@ -898,16 +978,19 @@
                 <TextRuns>
                   <TextRun>
                     <Value>Nonconformity Description</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox19</rd:DefaultName>
-            <Top>7.03333in</Top>
-            <Left>0.155in</Left>
-            <Height>0.21944in</Height>
+            <Top>4.8131in</Top>
+            <Left>0.28499in</Left>
+            <Height>0.16944in</Height>
             <Width>2.04167in</Width>
             <ZIndex>33</ZIndex>
             <Style>
@@ -935,9 +1018,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox20</rd:DefaultName>
-            <Top>7.48333in</Top>
-            <Left>0.105in</Left>
-            <Height>1.13333in</Height>
+            <Top>5.16677in</Top>
+            <Left>0.20833in</Left>
+            <Height>1.05in</Height>
             <Width>6.29167in</Width>
             <ZIndex>34</ZIndex>
             <Style>
@@ -951,8 +1034,8 @@
             </Style>
           </Textbox>
           <Line Name="Line14">
-            <Top>9.33611in</Top>
-            <Left>0.04333in</Left>
+            <Top>6.55566in</Top>
+            <Left>0.14in</Left>
             <Height>0in</Height>
             <Width>6.48667in</Width>
             <ZIndex>35</ZIndex>
@@ -970,15 +1053,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>Corrective/Preventive Action</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
-            <Top>9.06667in</Top>
-            <Left>0.23833in</Left>
+            <Top>6.28622in</Top>
+            <Left>0.19611in</Left>
             <Height>0.2in</Height>
             <Width>2.07501in</Width>
             <ZIndex>36</ZIndex>
@@ -1000,17 +1086,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!Proposal_for_corrective_or_preventive_actionCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox31</rd:DefaultName>
-            <Top>9.68333in</Top>
-            <Left>0.09667in</Left>
+            <Top>6.71677in</Top>
+            <Left>0.12166in</Left>
             <Height>0.26667in</Height>
-            <Width>3.23333in</Width>
+            <Width>3.10332in</Width>
             <ZIndex>37</ZIndex>
             <Style>
               <Border>
@@ -1030,17 +1119,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>Yes</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox32</rd:DefaultName>
-            <Top>9.40556in</Top>
-            <Left>3.64667in</Left>
-            <Height>0.23611in</Height>
-            <Width>0.375in</Width>
+            <Top>6.61122in</Top>
+            <Left>3.50667in</Left>
+            <Height>0.19445in</Height>
+            <Width>0.39999in</Width>
             <ZIndex>38</ZIndex>
             <Style>
               <Border>
@@ -1060,16 +1152,19 @@
                 <TextRuns>
                   <TextRun>
                     <Value>No</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox33</rd:DefaultName>
-            <Top>9.40556in</Top>
-            <Left>4.555in</Left>
-            <Height>0.23611in</Height>
+            <Top>6.62511in</Top>
+            <Left>4.41277in</Left>
+            <Height>0.18055in</Height>
             <Width>0.36666in</Width>
             <ZIndex>39</ZIndex>
             <Style>
@@ -1090,15 +1185,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!EmployeeCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox7</rd:DefaultName>
-            <Top>3.56667in</Top>
-            <Left>2.02167in</Left>
+            <Top>2.9991in</Top>
+            <Left>1.95499in</Left>
             <Height>0.23333in</Height>
             <Width>1.40833in</Width>
             <ZIndex>40</ZIndex>
@@ -1120,15 +1218,18 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!EmployeeNoCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>3.59167in</Top>
-            <Left>0.14667in</Left>
+            <Top>3.04077in</Top>
+            <Left>0.30111in</Left>
             <Height>0.20833in</Height>
             <Width>1.31666in</Width>
             <ZIndex>41</ZIndex>
@@ -1150,17 +1251,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!EmployeeNo.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>4.175in</Top>
-            <Left>0.13in</Left>
-            <Height>0.36667in</Height>
-            <Width>1.33333in</Width>
+            <Top>3.31854in</Top>
+            <Left>0.30111in</Left>
+            <Height>0.21667in</Height>
+            <Width>1.31721in</Width>
             <ZIndex>42</ZIndex>
             <Style>
               <Border>
@@ -1180,16 +1284,19 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Employee.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox34</rd:DefaultName>
-            <Top>4.14167in</Top>
-            <Left>2.03in</Left>
-            <Height>0.4in</Height>
+            <Top>3.2741in</Top>
+            <Left>1.96332in</Left>
+            <Height>0.24167in</Height>
             <Width>1.4in</Width>
             <ZIndex>43</ZIndex>
             <Style>
@@ -1206,10 +1313,10 @@
             <Source>Embedded</Source>
             <Value>checkbox_unchecked</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>9.68333in</Top>
-            <Left>3.59112in</Left>
-            <Height>0.675in</Height>
-            <Width>0.89444in</Width>
+            <Top>6.81955in</Top>
+            <Left>3.52333in</Left>
+            <Height>0.23612in</Height>
+            <Width>0.38333in</Width>
             <ZIndex>44</ZIndex>
             <Style>
               <Border>
@@ -1221,10 +1328,10 @@
             <Source>Embedded</Source>
             <Value>checkbox_unchecked1</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>9.68333in</Top>
-            <Left>4.48556in</Left>
-            <Height>0.675in</Height>
-            <Width>0.89999in</Width>
+            <Top>6.81955in</Top>
+            <Left>4.41277in</Left>
+            <Height>0.27779in</Height>
+            <Width>0.41389in</Width>
             <ZIndex>45</ZIndex>
             <Style>
               <Border>
@@ -1236,10 +1343,10 @@
             <Source>Embedded</Source>
             <Value>blackchecktickicon4</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>10.05in</Top>
-            <Left>3.81334in</Left>
-            <Height>0.16667in</Height>
-            <Width>0.20833in</Width>
+            <Top>6.94734in</Top>
+            <Left>3.57739in</Left>
+            <Height>0.10833in</Height>
+            <Width>0.11041in</Width>
             <ZIndex>46</ZIndex>
             <Visibility>
               <Hidden>=IIF(Fields!Proposal_for_corrective_or_preventive_action.Value=True,False,True)</Hidden>
@@ -1250,30 +1357,11 @@
               </Border>
             </Style>
           </Image>
-          <Image Name="Image7">
-            <Source>Embedded</Source>
-            <Value>blackchecktickicon41</Value>
-            <Sizing>FitProportional</Sizing>
-            <Top>10.05in</Top>
-            <Left>4.72167in</Left>
-            <Height>0.15833in</Height>
-            <Width>0.19166in</Width>
-            <ZIndex>47</ZIndex>
-            <Visibility>
-              <Hidden>=IIF(Fields!Proposal_for_corrective_or_preventive_action.Value=False,False,True)</Hidden>
-            </Visibility>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Image>
           <Line Name="Line15">
-            <Top>11.925in</Top>
-            <Left>0.03in</Left>
+            <Top>7.34456in</Top>
             <Height>0in</Height>
             <Width>6.5in</Width>
-            <ZIndex>48</ZIndex>
+            <ZIndex>47</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -1288,18 +1376,21 @@
                 <TextRuns>
                   <TextRun>
                     <Value>Comments</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>11.525in</Top>
-            <Left>0.24667in</Left>
-            <Height>0.33056in</Height>
+            <Top>7.05288in</Top>
+            <Left>0.12166in</Left>
+            <Height>0.22223in</Height>
             <Width>1.83333in</Width>
-            <ZIndex>49</ZIndex>
+            <ZIndex>48</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1325,11 +1416,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox35</rd:DefaultName>
-            <Top>12.175in</Top>
-            <Left>0.255in</Left>
-            <Height>0.625in</Height>
-            <Width>4.03334in</Width>
-            <ZIndex>50</ZIndex>
+            <Top>7.40011in</Top>
+            <Left>0.12166in</Left>
+            <Height>0.825in</Height>
+            <Width>5.60558in</Width>
+            <ZIndex>49</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1348,18 +1439,21 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!PenaltyCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>13.33333in</Top>
-            <Left>0.205in</Left>
-            <Height>0.25in</Height>
+            <Top>8.29456in</Top>
+            <Left>0.0939in</Left>
+            <Height>0.17777in</Height>
             <Width>1.19167in</Width>
-            <ZIndex>51</ZIndex>
+            <ZIndex>50</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1378,18 +1472,21 @@
                 <TextRuns>
                   <TextRun>
                     <Value>Yes</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox37</rd:DefaultName>
-            <Top>12.95833in</Top>
-            <Left>3.29667in</Left>
-            <Height>0.25in</Height>
-            <Width>0.38333in</Width>
-            <ZIndex>52</ZIndex>
+            <Top>8.22511in</Top>
+            <Left>1.43277in</Left>
+            <Height>0.17777in</Height>
+            <Width>0.3239in</Width>
+            <ZIndex>51</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1408,18 +1505,21 @@
                 <TextRuns>
                   <TextRun>
                     <Value>No</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox38</rd:DefaultName>
-            <Top>12.95833in</Top>
-            <Left>4.505in</Left>
-            <Height>0.25in</Height>
-            <Width>0.41666in</Width>
-            <ZIndex>53</ZIndex>
+            <Top>8.26678in</Top>
+            <Left>2.40446in</Left>
+            <Height>0.19166in</Height>
+            <Width>0.30833in</Width>
+            <ZIndex>52</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1434,11 +1534,11 @@
             <Source>Embedded</Source>
             <Value>checkbox_unchecked2</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>13.35in</Top>
-            <Left>3.29667in</Left>
-            <Height>0.6in</Height>
-            <Width>0.575in</Width>
-            <ZIndex>54</ZIndex>
+            <Top>8.41677in</Top>
+            <Left>1.43277in</Left>
+            <Height>0.22778in</Height>
+            <Width>0.26779in</Width>
+            <ZIndex>53</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1449,11 +1549,11 @@
             <Source>Embedded</Source>
             <Value>checkbox_unchecked3</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>13.35in</Top>
-            <Left>4.48556in</Left>
-            <Height>0.6in</Height>
-            <Width>0.55278in</Width>
-            <ZIndex>55</ZIndex>
+            <Top>8.45844in</Top>
+            <Left>2.39612in</Left>
+            <Height>0.25833in</Height>
+            <Width>0.2911in</Width>
+            <ZIndex>54</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1464,11 +1564,11 @@
             <Source>Embedded</Source>
             <Value>blackchecktickicon42</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>13.66667in</Top>
-            <Left>3.48in</Left>
+            <Top>8.51122in</Top>
+            <Left>1.51777in</Left>
             <Height>0.13333in</Height>
-            <Width>0.2in</Width>
-            <ZIndex>56</ZIndex>
+            <Width>0.1in</Width>
+            <ZIndex>55</ZIndex>
             <Visibility>
               <Hidden>=IIF(Fields!Penalty.Value=True,False,True)</Hidden>
             </Visibility>
@@ -1478,36 +1578,6 @@
               </Border>
             </Style>
           </Image>
-          <Image Name="Image11">
-            <Source>Embedded</Source>
-            <Value>blackchecktickicon43</Value>
-            <Sizing>FitProportional</Sizing>
-            <Top>13.66667in</Top>
-            <Left>4.655in</Left>
-            <Height>0.13333in</Height>
-            <Width>0.15833in</Width>
-            <ZIndex>57</ZIndex>
-            <Visibility>
-              <Hidden>=IIF(Fields!Penalty.Value=False,False,True)</Hidden>
-            </Visibility>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Image>
-          <Line Name="Line16">
-            <Top>15.23333in</Top>
-            <Left>0.02167in</Left>
-            <Height>0in</Height>
-            <Width>6.50833in</Width>
-            <ZIndex>58</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
           <Textbox Name="Textbox40">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
@@ -1516,18 +1586,21 @@
                 <TextRuns>
                   <TextRun>
                     <Value>Actions taken </Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox40</rd:DefaultName>
-            <Top>14.875in</Top>
-            <Left>0.18in</Left>
-            <Height>0.28889in</Height>
+            <Top>8.70011in</Top>
+            <Left>0.12166in</Left>
+            <Height>0.21389in</Height>
             <Width>1.65834in</Width>
-            <ZIndex>59</ZIndex>
+            <ZIndex>56</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1553,11 +1626,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox41</rd:DefaultName>
-            <Top>15.50834in</Top>
-            <Left>0.18in</Left>
-            <Height>0.8in</Height>
+            <Top>8.98344in</Top>
+            <Left>0.0939in</Left>
+            <Height>0.86945in</Height>
             <Width>5.63334in</Width>
-            <ZIndex>60</ZIndex>
+            <ZIndex>57</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1576,18 +1649,21 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!Closing_NonConformity_DateCaption.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox42</rd:DefaultName>
-            <Top>16.98333in</Top>
-            <Left>0.22167in</Left>
+            <Top>9.92234in</Top>
+            <Left>0.08389in</Left>
             <Height>0.25in</Height>
             <Width>1.61667in</Width>
-            <ZIndex>61</ZIndex>
+            <ZIndex>58</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1599,11 +1675,11 @@
             </Style>
           </Textbox>
           <Line Name="Line17">
-            <Top>17.125in</Top>
-            <Left>1.91333in</Left>
+            <Top>10.03333in</Top>
+            <Left>1.78168in</Left>
             <Height>0in</Height>
             <Width>0.40001in</Width>
-            <ZIndex>62</ZIndex>
+            <ZIndex>59</ZIndex>
             <Style>
               <Border>
                 <Style>Dashed</Style>
@@ -1630,18 +1706,21 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Closing_NonConformity_Date.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox43</rd:DefaultName>
-            <Top>16.93333in</Top>
-            <Left>2.42167in</Left>
-            <Height>0.3in</Height>
+            <Top>9.92234in</Top>
+            <Left>2.34056in</Left>
+            <Height>0.27778in</Height>
             <Width>2.29166in</Width>
-            <ZIndex>63</ZIndex>
+            <ZIndex>60</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1669,9 +1748,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox44</rd:DefaultName>
-                <Top>0.24167in</Top>
-                <Left>0.34167in</Left>
-                <Height>0.35in</Height>
+                <Top>0.11667in</Top>
+                <Left>0.26499in</Left>
+                <Height>0.21667in</Height>
                 <Width>1.40834in</Width>
                 <Style>
                   <Border>
@@ -1685,11 +1764,11 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>18.65833in</Top>
-            <Left>0.08833in</Left>
-            <Height>0.825in</Height>
-            <Width>2.61667in</Width>
-            <ZIndex>64</ZIndex>
+            <Top>10.24178in</Top>
+            <Left>0.0939in</Left>
+            <Height>0.33334in</Height>
+            <Width>2.12335in</Width>
+            <ZIndex>61</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1713,9 +1792,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox45</rd:DefaultName>
-                <Top>0.20833in</Top>
-                <Left>0.25833in</Left>
-                <Height>0.375in</Height>
+                <Top>0.11667in</Top>
+                <Left>0.15943in</Left>
+                <Height>0.19444in</Height>
                 <Width>1.28334in</Width>
                 <Style>
                   <Border>
@@ -1729,11 +1808,11 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>18.66667in</Top>
-            <Left>2.74667in</Left>
-            <Height>0.81666in</Height>
+            <Top>10.2279in</Top>
+            <Left>2.21725in</Left>
+            <Height>0.31111in</Height>
             <Width>2.06667in</Width>
-            <ZIndex>65</ZIndex>
+            <ZIndex>62</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1757,10 +1836,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox46</rd:DefaultName>
-                <Top>0.225in</Top>
-                <Left>0.13333in</Left>
-                <Height>0.35in</Height>
-                <Width>1.4in</Width>
+                <Top>0.11667in</Top>
+                <Left>0.1122in</Left>
+                <Height>0.19444in</Height>
+                <Width>1.52444in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1773,19 +1852,453 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>18.675in</Top>
-            <Left>4.86333in</Left>
-            <Height>0.94167in</Height>
-            <Width>1.63667in</Width>
-            <ZIndex>66</ZIndex>
+            <Top>10.24178in</Top>
+            <Left>4.29781in</Left>
+            <Height>0.31111in</Height>
+            <Width>1.72443in</Width>
+            <ZIndex>63</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Rectangle>
+          <Textbox Name="Textbox54">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=IIF(Fields!Penalty.Value=False,Chr(215)," ")</Value>
+                    <MarkupType>HTML</MarkupType>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox54</rd:DefaultName>
+            <Top>21.66788cm</Top>
+            <Left>6.10732cm</Left>
+            <Height>0.28928cm</Height>
+            <Width>0.45999cm</Width>
+            <ZIndex>64</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox55">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=IIF(Fields!Proposal_for_corrective_or_preventive_action.Value = False, Chr(215), "  ")</Value>
+                    <MarkupType>HTML</MarkupType>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox54</rd:DefaultName>
+            <Top>17.64625cm</Top>
+            <Left>11.30725cm</Left>
+            <Height>0.27516cm</Height>
+            <Width>0.35272cm</Width>
+            <ZIndex>65</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox57">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox57</rd:DefaultName>
+            <Top>0.25146cm</Top>
+            <Left>0.81278cm</Left>
+            <Height>2.97772cm</Height>
+            <Width>5.09697cm</Width>
+            <ZIndex>66</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Rectangle Name="Rectangle2">
+            <ReportItems>
+              <Textbox Name="Textbox62">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>CAPITAL RESOURCES shpk</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox62</rd:DefaultName>
+                <Top>0.635cm</Top>
+                <Left>0.4219cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.43983cm</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox63">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Nonconformance Quality Report </Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox63</rd:DefaultName>
+                <Top>1.87058cm</Top>
+                <Left>0.4219cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.43983cm</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.31496cm</Top>
+            <Left>5.94503cm</Left>
+            <Height>2.91422cm</Height>
+            <Width>6.31469cm</Width>
+            <ZIndex>67</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Textbox Name="Textbox58">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value xml:space="preserve">     </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!Creation_Date.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox58</rd:DefaultName>
+            <Top>0.31496cm</Top>
+            <Left>12.25972cm</Left>
+            <Height>2.91422cm</Height>
+            <Width>4.82176cm</Width>
+            <ZIndex>68</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Image Name="Image19">
+            <Source>Database</Source>
+            <Value>=First(Fields!Picture.Value, "DataSet_Result")</Value>
+            <MIMEType>image/bmp</MIMEType>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.31496cm</Top>
+            <Left>0.98213cm</Left>
+            <Height>0.52917cm</Height>
+            <Width>1.03717cm</Width>
+            <ZIndex>69</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Textbox Name="Textbox59">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>CAPITAL RESOURCES SH.P.K</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Autostrada TR-DR,km 8.8</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox59</rd:DefaultName>
+            <Top>0.94996cm</Top>
+            <Left>0.96103cm</Left>
+            <Height>0.79755cm</Height>
+            <Width>4.80761cm</Width>
+            <ZIndex>70</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox60">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Fields!Company_Phone_No_.Value</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox60</rd:DefaultName>
+            <Top>1.9239cm</Top>
+            <Left>0.96103cm</Left>
+            <Height>0.44423cm</Height>
+            <Width>4.67078cm</Width>
+            <ZIndex>71</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox61">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Fields!Company_s_Email.Value</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox61</rd:DefaultName>
+            <Top>2.50924cm</Top>
+            <Left>0.98213cm</Left>
+            <Height>0.64939cm</Height>
+            <Width>4.3053cm</Width>
+            <ZIndex>72</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox65">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Unit of Measur</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>e</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox65</rd:DefaultName>
+            <Top>11.44889cm</Top>
+            <Left>0.76482cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2.71498cm</Width>
+            <ZIndex>73</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Line Name="Line16">
+            <Top>11.76162cm</Top>
+            <Left>3.45866cm</Left>
+            <Height>0cm</Height>
+            <Width>0.65048cm</Width>
+            <ZIndex>74</ZIndex>
+            <Style>
+              <Border>
+                <Style>Dashed</Style>
+              </Border>
+              <TopBorder>
+                <Style>Dashed</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>Dashed</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>Dashed</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>Dashed</Style>
+              </RightBorder>
+            </Style>
+          </Line>
+          <Textbox Name="Textbox66">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox66</rd:DefaultName>
+            <Top>11.48417cm</Top>
+            <Left>4.73002cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2.32834cm</Width>
+            <ZIndex>75</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Line Name="Line2">
+            <Top>1.78279cm</Top>
+            <Left>5.94503cm</Left>
+            <Height>0cm</Height>
+            <Width>6.20885cm</Width>
+            <ZIndex>76</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
         </ReportItems>
-        <Height>19.61667in</Height>
+        <Height>49.82634cm</Height>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -1813,293 +2326,15 @@
           </RightBorder>
         </Style>
       </Body>
-      <Width>6.53in</Width>
+      <Width>17.28044cm</Width>
       <Page>
-        <PageHeader>
-          <Height>1.53in</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Rectangle Name="Rectangle2">
-              <ReportItems>
-                <Textbox Name="Textbox5">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>"Capital Resources" shpk</Value>
-                          <Style>
-                            <FontStyle>Normal</FontStyle>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>9pt</FontSize>
-                            <FontWeight>Normal</FontWeight>
-                            <TextDecoration>None</TextDecoration>
-                            <Color>#000000</Color>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Autostrada Tiranë Durrës, km 8.8 Picar,  Vorë (1032)</Value>
-                          <Style>
-                            <FontStyle>Normal</FontStyle>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>9pt</FontSize>
-                            <FontWeight>Normal</FontWeight>
-                            <TextDecoration>None</TextDecoration>
-                            <Color>#000000</Color>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox5</rd:DefaultName>
-                  <Top>0.28333in</Top>
-                  <Left>0.18889in</Left>
-                  <Height>0.49167in</Height>
-                  <Width>1.775in</Width>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Company_Phone_No_">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>=First(Fields!Company_Phone_No_.Value, "DataSet_Result")</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Company_Phone_No_</rd:DefaultName>
-                  <Top>0.80278in</Top>
-                  <Left>0.18889in</Left>
-                  <Height>0.20833in</Height>
-                  <Width>1.09445in</Width>
-                  <ZIndex>1</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-                <Image Name="Image4">
-                  <Source>Embedded</Source>
-                  <Value>=Fields!Picture.Value</Value>
-                  <Sizing>FitProportional</Sizing>
-                  <Top>0.05in</Top>
-                  <Left>0.325in</Left>
-                  <Height>0.20556in</Height>
-                  <Width>0.59167in</Width>
-                  <ZIndex>2</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Image>
-                <Textbox Name="Textbox39">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>=Fields!Company_s_Email.Value</Value>
-                          <Style />
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox39</rd:DefaultName>
-                  <Top>1.11666in</Top>
-                  <Left>0.24167in</Left>
-                  <Height>0.24167in</Height>
-                  <Width>1.04167in</Width>
-                  <ZIndex>3</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-              </ReportItems>
-              <KeepTogether>true</KeepTogether>
-              <Top>0.17167in</Top>
-              <Left>0.11333in</Left>
-              <Height>1.35833in</Height>
-              <Width>1.96667in</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Rectangle>
-            <Rectangle Name="Rectangle4">
-              <ReportItems>
-                <Textbox Name="Textbox4">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>=Fields!Creation_Date.Value</Value>
-                          <Style />
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox4</rd:DefaultName>
-                  <Top>0.21667in</Top>
-                  <Left>0.18333in</Left>
-                  <Height>0.25in</Height>
-                  <Width>1.21667in</Width>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-              </ReportItems>
-              <KeepTogether>true</KeepTogether>
-              <Top>0.18833in</Top>
-              <Left>4.555in</Left>
-              <Height>1.18389in</Height>
-              <Width>1.64167in</Width>
-              <ZIndex>1</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Rectangle>
-            <Rectangle Name="Rectangle5">
-              <ReportItems>
-                <Textbox Name="Textbox2">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>CAPITAL RESOURCES SHPK</Value>
-                          <Style />
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox2</rd:DefaultName>
-                  <Top>0.10833in</Top>
-                  <Left>0.28333in</Left>
-                  <Height>0.23333in</Height>
-                  <Width>2.06944in</Width>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox3">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Nonconformance Quality Report</Value>
-                          <Style />
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>0.45in</Top>
-                  <Left>0.11667in</Left>
-                  <Height>0.2in</Height>
-                  <Width>2.025in</Width>
-                  <ZIndex>1</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-              </ReportItems>
-              <KeepTogether>true</KeepTogether>
-              <Top>0.18833in</Top>
-              <Left>2.14667in</Left>
-              <Height>1.19778in</Height>
-              <Width>2.35278in</Width>
-              <ZIndex>2</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Rectangle>
-            <Line Name="Line2">
-              <Top>0.53in</Top>
-              <Left>2.13833in</Left>
-              <Height>0in</Height>
-              <Width>2.01944in</Width>
-              <ZIndex>3</ZIndex>
-              <Style>
-                <Border>
-                  <Style>Solid</Style>
-                </Border>
-              </Style>
-            </Line>
-          </ReportItems>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageHeader>
+        <PageHeight>27.94cm</PageHeight>
+        <PageWidth>21.59cm</PageWidth>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
         <Style />
       </Page>
     </ReportSection>
@@ -2592,7 +2827,7 @@ gxAGNde5CPYghMFdey6CPQhhAa4dIigQwkJcerqyQ0pgYd7l/ETgFGNYmJvsx/unJoFNm8sESrvL6QVC
   </EmbeddedImages>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
   <DataSets>
     <DataSet Name="DataSet_Result">
