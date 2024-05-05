@@ -39,12 +39,9 @@ page 50101 "Responsible Employee"
                 field(Employee;Rec.Employee){
                     ApplicationArea=all;
                 }
-                field(Date;Rec.Date){
-                    ApplicationArea=all;
-                }
+               
                 field("Report No.";Rec."No.."){
-                   
-                    ApplicationArea=all;
+                   visible=false;
                 }
                 
             }

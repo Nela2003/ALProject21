@@ -14,13 +14,13 @@ page 50100 "NonConformity Rep"
         area(Content)
         {
 
-            field("No.."; Rec."No..")
-            {
-                Caption = 'No.';
-                ApplicationArea = all;
+            // field("No.."; Rec."No..")
+            // {
+            //     Caption = 'No.';
+            //     ApplicationArea = all;
                 
 
-            }
+            // }
             group(General)
             {
                 field("Type of nonconformity"; Rec."Type of nonconformity")
@@ -161,6 +161,7 @@ page 50100 "NonConformity Rep"
                             vlbool2:=false;
                           dt1:=System.Today();
                           Rec.Validate("Closing NonConformity Date",dt1);
+                          Rec.Modify();
                         
                         end
                          else  if ((Rec.Status=Rec.Status::Open) and (XRec.Status=xRec.Status::Closed)   ) then begin
@@ -192,6 +193,7 @@ page 50100 "NonConformity Rep"
             part("Report Lines"; "Report List ")
             {
                 SubPageLink = "No.." = field("No..");
+                ApplicationArea=all;
             }
         }
     }
@@ -263,7 +265,6 @@ page 50100 "NonConformity Rep"
         Vlbool2: boolean;
         dt: date;
         description:text[100];
-         Responsibletable:Record "Responsible Employee table";
         
          Employeetest:Record "Employee test";
          Nonconformance:Record "NonConformance Doc Table";

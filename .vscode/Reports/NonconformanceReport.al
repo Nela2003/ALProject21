@@ -164,7 +164,7 @@ end;
     
     var
    
-        Responsibletable:Record "Responsible Employee table";
+       
         Nr:code[20];
  CompInfo:Record "Company Information";
 }

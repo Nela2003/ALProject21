@@ -28,9 +28,7 @@ table  50104   "Employee test"
 
             AutoIncrement=true;
         }
-        field(5;"Date";Date){
-
-        }
+       
       
     }
     
@@ -82,16 +80,16 @@ var
  EmployeeCommentLine.SetRange("No..","No..");
 
 
- EmployeeCommentLine.SetRange("Date",WorkDate);
- if not EmployeeCommentLine.FindFirst() then begin 
-            Date := WorkDate;
+//  EmployeeCommentLine.SetRange("Date",WorkDate);
+//  if not EmployeeCommentLine.FindFirst() then begin 
+//             Date := WorkDate;
 
         OnAfterSetUpNewLine(Rec, EmployeeCommentLine);
     end;
 
 
  
- end;
+//  end;
   [IntegrationEvent(false, false)]
     local procedure OnAfterSetUpNewLine(var EmployeeCommentLine: Record "Employee test"; var CommentLineFilter: Record "Employee test")
     begin
