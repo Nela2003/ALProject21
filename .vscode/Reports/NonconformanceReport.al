@@ -82,7 +82,7 @@ report 50100 "Nonconformance Report"
            column(Quantity;Quantity){
             IncludeCaption=true;
            }
-             dataitem("Employee test";"Employee test"){
+             dataitem("Responsible Employee";"Responsible Employee"){
                 DataItemTableView=sorting("No..");
               DataItemLink= "No.."=field("No.."); 
               column(EmployeeNo;"No."){
@@ -98,8 +98,8 @@ report 50100 "Nonconformance Report"
            trigger OnAfterGetRecord();
                 
                   var CompInfo:Record "Company Information";
-                      Test:Record "Employee test";
-                      NonConformance:Record "NonConformance Doc Table";
+                      
+                      
            begin 
 
      CompInfo.get();
@@ -138,12 +138,7 @@ report 50100 "Nonconformance Report"
         
             }
             
-       trigger OnAfterGetCurrRecord()
-       var
-          myInt: Integer;
-       begin
-           
-       end;
+     
             }
         
     
@@ -159,9 +154,5 @@ report 50100 "Nonconformance Report"
        // }
    // }
     
-    var
-   
-       
-        Nr:code[20];
- CompInfo:Record "Company Information";
+  
 }

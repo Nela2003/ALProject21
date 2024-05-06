@@ -1,6 +1,6 @@
 page 50101 "Responsible Employee"
 {
-    Caption = 'PageName';
+    Caption = 'Responsible Employee';
     PageType = List;
     DataCaptionFields="No..";
   
@@ -10,7 +10,7 @@ page 50101 "Responsible Employee"
    MultipleNewLines=true;
     UsageCategory = Lists;
     ApplicationArea = All;
-    SourceTable = "Employee test" ;
+    SourceTable = "Responsible Employee" ;
     
     
     layout

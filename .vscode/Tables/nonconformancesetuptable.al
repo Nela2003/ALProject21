@@ -15,7 +15,7 @@ table 50102 "Nonconformance Setup"
  {
  Caption = 'Nonconformance Nos.';
  TableRelation = "No. Series";
-//  TableRelation="No. Series".Code;
+
  }
  field(30;"Posting Nonconformance Nos.";code[20])
  {

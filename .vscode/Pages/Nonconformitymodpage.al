@@ -14,13 +14,7 @@ page 50100 "NonConformity Rep"
         area(Content)
         {
 
-            // field("No.."; Rec."No..")
-            // {
-            //     Caption = 'No.';
-            //     ApplicationArea = all;
-                
-
-            // }
+          
             group(General)
             {
                 field("Type of nonconformity"; Rec."Type of nonconformity")
@@ -266,7 +260,7 @@ page 50100 "NonConformity Rep"
         dt: date;
         description:text[100];
         
-         Employeetest:Record "Employee test";
+        
          Nonconformance:Record "NonConformance Doc Table";
          
          

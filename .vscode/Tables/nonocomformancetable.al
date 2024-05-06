@@ -3,12 +3,7 @@ table 50101 "NonConformance Doc Table"
     DataClassification = ToBeClassified;
      Caption='Nonconformance Doc table';
     
-      
- 
-    
-      
-    
-    fields
+       fields
     { 
         field(1;"No.."; Code[20])
         {  Caption='No..';
@@ -36,17 +31,11 @@ table 50101 "NonConformance Doc Table"
         {
             DataClassification = ToBeClassified;
 
-            
-         
         }
         field(5;"Posting Date"; Date)
         {   
             
-                }
-       
-
-        
-       
+        }
         field(6;"Item No."; Code[20])
         {
             DataClassification = ToBeClassified;
@@ -129,12 +118,12 @@ table 50101 "NonConformance Doc Table"
         myInt: Integer;
     
         NoseriesMgt:Codeunit NoSeriesManagement;
-        Employee1:Record  "Employee test";
-        Kodi:Code[20];
+       
+       
       
          trigger OnInsert()
     var Setup:Record "Nonconformance Setup";
-    Employee:Record  "Employee test";
+   
     begin
       if "No.."='' then begin 
         Setup.Get();

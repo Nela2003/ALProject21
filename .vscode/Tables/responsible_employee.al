@@ -1,4 +1,4 @@
-table  50104   "Employee test"
+table  50104   "Responsible Employee"
 {   
     DataClassification = ToBeClassified;
     DrillDownPageID=50101 ;
@@ -70,23 +70,23 @@ table  50104   "Employee test"
 
     procedure SetupNewLine()
 var
- EmployeeCommentLine: Record "Employee test";
- Employee1:Record Employee;
+ EmployeeLine: Record "Responsible Employee";
+
  begin
 
- EmployeeCommentLine.SetRange("No..","No..");
+ EmployeeLine.SetRange("No..","No..");
 
 
 
 
-        OnAfterSetUpNewLine(Rec, EmployeeCommentLine);
+        OnAfterSetUpNewLine(Rec, EmployeeLine);
     end;
 
 
  
 
   [IntegrationEvent(false, false)]
-    local procedure OnAfterSetUpNewLine(var EmployeeCommentLine: Record "Employee test"; var CommentLineFilter: Record "Employee test")
+    local procedure OnAfterSetUpNewLine(var EmployeeLine: Record "Responsible Employee"; var EmployeeFilter: Record "Responsible Employee")
     begin
     end;
     
