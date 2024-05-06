@@ -1708,7 +1708,7 @@
             <Top>10.14456in</Top>
             <Left>0.27443in</Left>
             <Height>0.38889in</Height>
-            <Width>1.78281in</Width>
+            <Width>2.06613in</Width>
             <ZIndex>56</ZIndex>
             <Style>
               <Border>
@@ -1734,7 +1734,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox45</rd:DefaultName>
                 <Top>0in</Top>
-                <Left>0.00832in</Left>
+                <Left>0.13612in</Left>
                 <Height>0.19444in</Height>
                 <Width>1.28334in</Width>
                 <Style>
@@ -1750,9 +1750,9 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>10.14456in</Top>
-            <Left>2.07113in</Left>
+            <Left>2.34056in</Left>
             <Height>0.38889in</Height>
-            <Width>2.06667in</Width>
+            <Width>2.81332in</Width>
             <ZIndex>57</ZIndex>
             <Style>
               <Border>
@@ -1781,7 +1781,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox46</rd:DefaultName>
                 <Top>0.00834in</Top>
-                <Left>0.01389in</Left>
+                <Left>0.06944in</Left>
                 <Height>0.1861in</Height>
                 <Width>1.52444in</Width>
                 <Style>
@@ -1797,17 +1797,14 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>10.14456in</Top>
-            <Left>4.15169in</Left>
+            <Left>5.15388in</Left>
             <Height>0.38889in</Height>
-            <Width>2.41776in</Width>
+            <Width>2.59945in</Width>
             <ZIndex>58</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
               </Border>
-              <LeftBorder>
-                <Style>None</Style>
-              </LeftBorder>
             </Style>
           </Rectangle>
           <Textbox Name="Textbox54">
