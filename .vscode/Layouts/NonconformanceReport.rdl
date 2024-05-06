@@ -11,6 +11,85 @@
       <rd:DataSourceID>f156608e-6625-4f04-9648-33b4c8931d23</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="No_">
+          <DataField>No_</DataField>
+        </Field>
+        <Field Name="CAQS_Employee">
+          <DataField>CAQS_Employee</DataField>
+        </Field>
+        <Field Name="CAQS_Employee_No_">
+          <DataField>CAQS_Employee_No_</DataField>
+        </Field>
+        <Field Name="Closing_NonConformity_Date">
+          <DataField>Closing_NonConformity_Date</DataField>
+        </Field>
+        <Field Name="Creation_Date">
+          <DataField>Creation_Date</DataField>
+        </Field>
+        <Field Name="Actions_taken">
+          <DataField>Actions_taken</DataField>
+        </Field>
+        <Field Name="Comments">
+          <DataField>Comments</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Item_No_">
+          <DataField>Item_No_</DataField>
+        </Field>
+        <Field Name="Lot">
+          <DataField>Lot</DataField>
+        </Field>
+        <Field Name="Nonconformity_Description">
+          <DataField>Nonconformity_Description</DataField>
+        </Field>
+        <Field Name="Type_of_nonconformity">
+          <DataField>Type_of_nonconformity</DataField>
+        </Field>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
+        </Field>
+        <Field Name="Nonconformity_Reason">
+          <DataField>Nonconformity_Reason</DataField>
+        </Field>
+        <Field Name="Penalty">
+          <DataField>Penalty</DataField>
+        </Field>
+        <Field Name="Proposal_for_corrective_or_preventive_action">
+          <DataField>Proposal_for_corrective_or_preventive_action</DataField>
+        </Field>
+        <Field Name="Company_Name">
+          <DataField>Company_Name</DataField>
+        </Field>
+        <Field Name="Company_s_Email">
+          <DataField>Company_s_Email</DataField>
+        </Field>
+        <Field Name="Company_Phone_No_">
+          <DataField>Company_Phone_No_</DataField>
+        </Field>
+        <Field Name="Picture">
+          <DataField>Picture</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="EmployeeNo">
+          <DataField>EmployeeNo</DataField>
+        </Field>
+        <Field Name="Employee">
+          <DataField>Employee</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -38,7 +117,7 @@
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
+                      <FontWeight>Bold</FontWeight>
                       <TextDecoration>None</TextDecoration>
                       <Color>#000000</Color>
                     </Style>
@@ -51,7 +130,7 @@
             <Top>1.29111in</Top>
             <Left>0.28997in</Left>
             <Height>0.20833in</Height>
-            <Width>1.75227in</Width>
+            <Width>2.19503in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -74,6 +153,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -84,7 +164,7 @@
             <Top>1.555in</Top>
             <Left>0.28499in</Left>
             <Height>0.175in</Height>
-            <Width>1.75003in</Width>
+            <Width>2.20001in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -119,6 +199,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -129,7 +210,7 @@
             <Top>1.78555in</Top>
             <Left>0.28499in</Left>
             <Height>0.18055in</Height>
-            <Width>1.77225in</Width>
+            <Width>2.07999in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -223,7 +304,7 @@
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -313,7 +394,7 @@
             <ZIndex>10</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -460,7 +541,7 @@
             <ZIndex>15</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -493,7 +574,7 @@
             <ZIndex>16</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -512,17 +593,22 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
                     <Value xml:space="preserve"> </Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
                   </TextRun>
                   <TextRun>
                     <Value>Employee</Value>
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -568,17 +654,21 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
                     <Value xml:space="preserve"> </Value>
-                    <Style />
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
                   </TextRun>
                   <TextRun>
                     <Value>Details</Value>
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -726,6 +816,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -740,7 +831,7 @@
             <ZIndex>24</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -773,7 +864,7 @@
             <ZIndex>25</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -860,7 +951,7 @@
             <ZIndex>28</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -950,7 +1041,7 @@
             <ZIndex>31</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -1025,7 +1116,7 @@
             <ZIndex>34</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -1056,6 +1147,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -1122,6 +1214,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -1129,10 +1222,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox32</rd:DefaultName>
-            <Top>6.32421in</Top>
-            <Left>3.39001in</Left>
+            <Top>6.69087in</Top>
+            <Left>3.78335in</Left>
             <Height>0.18056in</Height>
-            <Width>0.48333in</Width>
+            <Width>0.27001in</Width>
             <ZIndex>38</ZIndex>
             <Style>
               <Border>
@@ -1155,6 +1248,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -1162,10 +1256,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox33</rd:DefaultName>
-            <Top>6.32421in</Top>
-            <Left>4.3117in</Left>
+            <Top>6.7131in</Top>
+            <Left>4.72003in</Left>
             <Height>0.18055in</Height>
-            <Width>0.36666in</Width>
+            <Width>0.30833in</Width>
             <ZIndex>39</ZIndex>
             <Style>
               <Border>
@@ -1188,6 +1282,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -1221,6 +1316,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -1329,9 +1425,9 @@
             <Value>checkbox_unchecked1</Value>
             <Sizing>FitProportional</Sizing>
             <Top>6.57421in</Top>
-            <Left>4.3711in</Left>
+            <Left>4.3117in</Left>
             <Height>0.32501in</Height>
-            <Width>0.41389in</Width>
+            <Width>0.47329in</Width>
             <ZIndex>45</ZIndex>
             <Style>
               <Border>
@@ -1424,7 +1520,7 @@
             <ZIndex>49</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -1476,6 +1572,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -1483,10 +1580,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox37</rd:DefaultName>
-            <Top>7.87144in</Top>
-            <Left>3.39001in</Left>
+            <Top>8.16866in</Top>
+            <Left>3.78335in</Left>
             <Height>0.17777in</Height>
-            <Width>0.3239in</Width>
+            <Width>0.27001in</Width>
             <ZIndex>51</ZIndex>
             <Style>
               <Border>
@@ -1509,6 +1606,7 @@
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
                       <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -1516,8 +1614,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox38</rd:DefaultName>
-            <Top>7.88533in</Top>
-            <Left>4.3117in</Left>
+            <Top>8.16866in</Top>
+            <Left>4.72003in</Left>
             <Height>0.19166in</Height>
             <Width>0.30833in</Width>
             <ZIndex>52</ZIndex>
@@ -1536,7 +1634,7 @@
             <Value>checkbox_unchecked2</Value>
             <Sizing>FitProportional</Sizing>
             <Top>8.0631in</Top>
-            <Left>3.36392in</Left>
+            <Left>3.41781in</Left>
             <Height>0.28333in</Height>
             <Width>0.2961in</Width>
             <ZIndex>53</ZIndex>
@@ -1565,8 +1663,8 @@
             <Source>Embedded</Source>
             <Value>blackchecktickicon42</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>8.17788in</Top>
-            <Left>3.39001in</Left>
+            <Top>8.16866in</Top>
+            <Left>3.49001in</Left>
             <Height>0.16855in</Height>
             <Width>0.27001in</Width>
             <ZIndex>55</ZIndex>
@@ -1634,7 +1732,7 @@
             <ZIndex>57</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -1949,7 +2047,10 @@
                     <TextRuns>
                       <TextRun>
                         <Value>CAPITAL RESOURCES shpk</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
@@ -1977,7 +2078,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Nonconformance Quality Report </Value>
+                        <Value>Nonconformance Quality Report</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -2020,7 +2128,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value xml:space="preserve">     </Value>
+                    <Value xml:space="preserve"> </Value>
                     <Style />
                   </TextRun>
                   <TextRun>
@@ -2243,7 +2351,7 @@
             <ZIndex>73</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -2815,83 +2923,4 @@ gxAGNde5CPYghMFdey6CPQhhAa4dIigQwkJcerqyQ0pgYd7l/ETgFGNYmJvsx/unJoFNm8sESrvL6QVC
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="No_">
-          <DataField>No_</DataField>
-        </Field>
-        <Field Name="CAQS_Employee">
-          <DataField>CAQS_Employee</DataField>
-        </Field>
-        <Field Name="CAQS_Employee_No_">
-          <DataField>CAQS_Employee_No_</DataField>
-        </Field>
-        <Field Name="Closing_NonConformity_Date">
-          <DataField>Closing_NonConformity_Date</DataField>
-        </Field>
-        <Field Name="Creation_Date">
-          <DataField>Creation_Date</DataField>
-        </Field>
-        <Field Name="Actions_taken">
-          <DataField>Actions_taken</DataField>
-        </Field>
-        <Field Name="Comments">
-          <DataField>Comments</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="Item_No_">
-          <DataField>Item_No_</DataField>
-        </Field>
-        <Field Name="Lot">
-          <DataField>Lot</DataField>
-        </Field>
-        <Field Name="Nonconformity_Description">
-          <DataField>Nonconformity_Description</DataField>
-        </Field>
-        <Field Name="Type_of_nonconformity">
-          <DataField>Type_of_nonconformity</DataField>
-        </Field>
-        <Field Name="Posting_Date">
-          <DataField>Posting_Date</DataField>
-        </Field>
-        <Field Name="Nonconformity_Reason">
-          <DataField>Nonconformity_Reason</DataField>
-        </Field>
-        <Field Name="Penalty">
-          <DataField>Penalty</DataField>
-        </Field>
-        <Field Name="Proposal_for_corrective_or_preventive_action">
-          <DataField>Proposal_for_corrective_or_preventive_action</DataField>
-        </Field>
-        <Field Name="Company_Name">
-          <DataField>Company_Name</DataField>
-        </Field>
-        <Field Name="Company_s_Email">
-          <DataField>Company_s_Email</DataField>
-        </Field>
-        <Field Name="Company_Phone_No_">
-          <DataField>Company_Phone_No_</DataField>
-        </Field>
-        <Field Name="Picture">
-          <DataField>Picture</DataField>
-        </Field>
-        <Field Name="Quantity">
-          <DataField>Quantity</DataField>
-        </Field>
-        <Field Name="EmployeeNo">
-          <DataField>EmployeeNo</DataField>
-        </Field>
-        <Field Name="Employee">
-          <DataField>Employee</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
