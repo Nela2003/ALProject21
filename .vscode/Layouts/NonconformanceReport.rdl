@@ -341,7 +341,7 @@
             <rd:DefaultName>Textbox14</rd:DefaultName>
             <Top>2.33334in</Top>
             <Left>2.27999in</Left>
-            <Height>0.25833in</Height>
+            <Height>0.25in</Height>
             <Width>1.38003in</Width>
             <ZIndex>8</ZIndex>
             <Style>
@@ -769,7 +769,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Description.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -910,7 +913,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Nonconformity_Description.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -1180,7 +1186,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Comments.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -1257,7 +1266,7 @@
             <Top>8.17789in</Top>
             <Left>3.91501in</Left>
             <Height>0.17777in</Height>
-            <Width>0.22834in</Width>
+            <Width>0.27001in</Width>
             <ZIndex>39</ZIndex>
             <Style>
               <Border>
@@ -1392,7 +1401,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!Actions_taken.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -1490,7 +1502,10 @@
                     <TextRuns>
                       <TextRun>
                         <Value>Open:</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
@@ -1534,7 +1549,10 @@
                     <TextRuns>
                       <TextRun>
                         <Value>Approved:</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
@@ -1580,7 +1598,14 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Responsible Employee:</Value>
+                        <Value>Responsible Employee</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>:</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -1997,7 +2022,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -2180,9 +2208,9 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox34</rd:DefaultName>
                               <Top>0.23611in</Top>
-                              <Left>1.31721in</Left>
+                              <Left>1.3311in</Left>
                               <Height>0.23243in</Height>
-                              <Width>1.4in</Width>
+                              <Width>1.40778in</Width>
                               <ZIndex>3</ZIndex>
                               <Style>
                                 <Border>
@@ -2266,7 +2294,7 @@
             </Style>
           </Line>
         </ReportItems>
-        <Height>27.67367cm</Height>
+        <Height>27.2715cm</Height>
         <Style>
           <Border>
             <Style>Solid</Style>
