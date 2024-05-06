@@ -190,8 +190,8 @@ page 50100 "NonConformity Rep"
             }
 
           
-            part("Report Lines"; "Report List ")
-            {
+            part("Responsible Employee"; "Responsible Employee")
+            { Caption='Responsible Employee List';
                 SubPageLink = "No.." = field("No..");
                 ApplicationArea=all;
             }

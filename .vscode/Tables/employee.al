@@ -24,17 +24,14 @@ table  50104   "Employee test"
             TableRelation="NonConformance Doc Table"."No..";
             ValidateTableRelation=false;
         }
-        field(4;"Line No.";Integer){
-
-            AutoIncrement=true;
-        }
+      
        
       
     }
     
     keys
     {
-        key(Key1;"Line No.","No..")
+        key(Key1;"No.","No..")
         {
             Clustered = true;
         }
@@ -80,16 +77,14 @@ var
  EmployeeCommentLine.SetRange("No..","No..");
 
 
-//  EmployeeCommentLine.SetRange("Date",WorkDate);
-//  if not EmployeeCommentLine.FindFirst() then begin 
-//             Date := WorkDate;
+
 
         OnAfterSetUpNewLine(Rec, EmployeeCommentLine);
     end;
 
 
  
-//  end;
+
   [IntegrationEvent(false, false)]
     local procedure OnAfterSetUpNewLine(var EmployeeCommentLine: Record "Employee test"; var CommentLineFilter: Record "Employee test")
     begin
