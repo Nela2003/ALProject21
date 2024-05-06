@@ -11,6 +11,85 @@
       <rd:DataSourceID>f156608e-6625-4f04-9648-33b4c8931d23</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="No_">
+          <DataField>No_</DataField>
+        </Field>
+        <Field Name="CAQS_Employee">
+          <DataField>CAQS_Employee</DataField>
+        </Field>
+        <Field Name="CAQS_Employee_No_">
+          <DataField>CAQS_Employee_No_</DataField>
+        </Field>
+        <Field Name="Closing_NonConformity_Date">
+          <DataField>Closing_NonConformity_Date</DataField>
+        </Field>
+        <Field Name="Creation_Date">
+          <DataField>Creation_Date</DataField>
+        </Field>
+        <Field Name="Actions_taken">
+          <DataField>Actions_taken</DataField>
+        </Field>
+        <Field Name="Comments">
+          <DataField>Comments</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Item_No_">
+          <DataField>Item_No_</DataField>
+        </Field>
+        <Field Name="Lot">
+          <DataField>Lot</DataField>
+        </Field>
+        <Field Name="Nonconformity_Description">
+          <DataField>Nonconformity_Description</DataField>
+        </Field>
+        <Field Name="Type_of_nonconformity">
+          <DataField>Type_of_nonconformity</DataField>
+        </Field>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
+        </Field>
+        <Field Name="Nonconformity_Reason">
+          <DataField>Nonconformity_Reason</DataField>
+        </Field>
+        <Field Name="Penalty">
+          <DataField>Penalty</DataField>
+        </Field>
+        <Field Name="Proposal_for_corrective_or_preventive_action">
+          <DataField>Proposal_for_corrective_or_preventive_action</DataField>
+        </Field>
+        <Field Name="Company_Name">
+          <DataField>Company_Name</DataField>
+        </Field>
+        <Field Name="Company_s_Email">
+          <DataField>Company_s_Email</DataField>
+        </Field>
+        <Field Name="Company_Phone_No_">
+          <DataField>Company_Phone_No_</DataField>
+        </Field>
+        <Field Name="Picture">
+          <DataField>Picture</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="EmployeeNo">
+          <DataField>EmployeeNo</DataField>
+        </Field>
+        <Field Name="Employee">
+          <DataField>Employee</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -48,7 +127,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox8</rd:DefaultName>
-            <Top>1.29111in</Top>
+            <Top>1.22167in</Top>
             <Left>0.28997in</Left>
             <Height>0.20833in</Height>
             <Width>2.19503in</Width>
@@ -82,7 +161,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>No_</rd:DefaultName>
-            <Top>1.555in</Top>
+            <Top>1.47166in</Top>
             <Left>0.28499in</Left>
             <Height>0.175in</Height>
             <Width>2.20001in</Width>
@@ -98,7 +177,7 @@
             </Style>
           </Textbox>
           <Line Name="Line3">
-            <Top>1.99388in</Top>
+            <Top>1.89666in</Top>
             <Left>0.08389in</Left>
             <Height>0in</Height>
             <Width>7.76944in</Width>
@@ -128,10 +207,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox10</rd:DefaultName>
-            <Top>1.78555in</Top>
-            <Left>0.28499in</Left>
+            <Top>1.68833in</Top>
+            <Left>0.28997in</Left>
             <Height>0.18055in</Height>
-            <Width>2.07999in</Width>
+            <Width>2.20001in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -161,7 +240,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Type_of_nonconformityCaption</rd:DefaultName>
-            <Top>2.04944in</Top>
+            <Top>1.95221in</Top>
             <Left>0.28499in</Left>
             <Height>0.24167in</Height>
             <Width>1.76333in</Width>
@@ -194,7 +273,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox12</rd:DefaultName>
-            <Top>2.03555in</Top>
+            <Top>1.9661in</Top>
             <Left>2.27999in</Left>
             <Height>0.24167in</Height>
             <Width>1.38003in</Width>
@@ -227,7 +306,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
-            <Top>2.33334in</Top>
+            <Top>2.24944in</Top>
             <Left>0.28997in</Left>
             <Height>0.25in</Height>
             <Width>1.75835in</Width>
@@ -260,7 +339,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox14</rd:DefaultName>
-            <Top>2.33334in</Top>
+            <Top>2.26333in</Top>
             <Left>2.27999in</Left>
             <Height>0.25in</Height>
             <Width>1.38003in</Width>
@@ -293,8 +372,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>2.04944in</Top>
-            <Left>3.75166in</Left>
+            <Top>1.9661in</Top>
+            <Left>3.91501in</Left>
             <Height>0.24167in</Height>
             <Width>1.075in</Width>
             <ZIndex>9</ZIndex>
@@ -326,8 +405,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Top>2.33334in</Top>
-            <Left>3.74334in</Left>
+            <Top>2.26333in</Top>
+            <Left>3.90669in</Left>
             <Height>0.25in</Height>
             <Width>1.08332in</Width>
             <ZIndex>10</ZIndex>
@@ -359,8 +438,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox17</rd:DefaultName>
-            <Top>2.03555in</Top>
-            <Left>5.18166in</Left>
+            <Top>1.9661in</Top>
+            <Left>5.22332in</Left>
             <Height>0.20833in</Height>
             <Width>1.31834in</Width>
             <ZIndex>11</ZIndex>
@@ -392,8 +471,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox18</rd:DefaultName>
-            <Top>2.33334in</Top>
-            <Left>5.18166in</Left>
+            <Top>2.26333in</Top>
+            <Left>5.22332in</Left>
             <Height>0.25in</Height>
             <Width>1.31834in</Width>
             <ZIndex>12</ZIndex>
@@ -441,7 +520,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>2.65278in</Top>
+            <Top>2.5411in</Top>
             <Left>0.30111in</Left>
             <Height>0.2in</Height>
             <Width>1.70889in</Width>
@@ -1433,7 +1512,6 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox44</rd:DefaultName>
-                <Top>0in</Top>
                 <Left>0.10393in</Left>
                 <Height>0.19444in</Height>
                 <Width>1.41948in</Width>
@@ -1480,7 +1558,6 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox45</rd:DefaultName>
-                <Top>0in</Top>
                 <Left>0.13612in</Left>
                 <Height>0.19444in</Height>
                 <Width>1.28334in</Width>
@@ -1999,70 +2076,6 @@
                       <CellContents>
                         <Rectangle Name="Rectangle4">
                           <ReportItems>
-                            <Textbox Name="Textbox9">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Parameters!EmployeeNoCaption.Value</Value>
-                                      <Style>
-                                        <FontFamily>Times New Roman</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox9</rd:DefaultName>
-                              <Height>0.20833in</Height>
-                              <Width>1.31666in</Width>
-                              <Style>
-                                <Border>
-                                  <Style>Solid</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox7">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Parameters!EmployeeCaption.Value</Value>
-                                      <Style>
-                                        <FontFamily>Times New Roman</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox7</rd:DefaultName>
-                              <Left>1.33055in</Left>
-                              <Height>0.20833in</Height>
-                              <Width>1.40833in</Width>
-                              <ZIndex>1</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>Solid</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
                             <Textbox Name="Textbox11">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
@@ -2084,7 +2097,6 @@
                               <Top>0.23611in</Top>
                               <Height>0.21667in</Height>
                               <Width>1.31721in</Width>
-                              <ZIndex>2</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -2132,7 +2144,7 @@
                               <Left>1.3311in</Left>
                               <Height>0.23243in</Height>
                               <Width>1.40778in</Width>
-                              <ZIndex>3</ZIndex>
+                              <ZIndex>1</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -2179,10 +2191,10 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <Top>7.28134cm</Top>
+            <Top>7.49303cm</Top>
             <Left>0.76482cm</Left>
             <Height>1.19009cm</Height>
-            <Width>6.95675cm</Width>
+            <Width>6.95676cm</Width>
             <ZIndex>62</ZIndex>
             <Style>
               <Border>
@@ -2214,6 +2226,72 @@
               </Border>
             </Style>
           </Line>
+          <Textbox Name="Textbox3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!EmployeeNoCaption.Value</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox3</rd:DefaultName>
+            <Top>6.99768cm</Top>
+            <Left>0.76482cm</Left>
+            <Height>0.42479cm</Height>
+            <Width>3.34571cm</Width>
+            <ZIndex>65</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!EmployeeCaption.Value</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>6.99768cm</Top>
+            <Left>4.1402cm</Left>
+            <Height>0.38951cm</Height>
+            <Width>3.58137cm</Width>
+            <ZIndex>66</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <Height>27.843cm</Height>
         <Style>
@@ -2725,83 +2803,4 @@ gxAGNde5CPYghMFdey6CPQhhAa4dIigQwkJcerqyQ0pgYd7l/ETgFGNYmJvsx/unJoFNm8sESrvL6QVC
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="No_">
-          <DataField>No_</DataField>
-        </Field>
-        <Field Name="CAQS_Employee">
-          <DataField>CAQS_Employee</DataField>
-        </Field>
-        <Field Name="CAQS_Employee_No_">
-          <DataField>CAQS_Employee_No_</DataField>
-        </Field>
-        <Field Name="Closing_NonConformity_Date">
-          <DataField>Closing_NonConformity_Date</DataField>
-        </Field>
-        <Field Name="Creation_Date">
-          <DataField>Creation_Date</DataField>
-        </Field>
-        <Field Name="Actions_taken">
-          <DataField>Actions_taken</DataField>
-        </Field>
-        <Field Name="Comments">
-          <DataField>Comments</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="Item_No_">
-          <DataField>Item_No_</DataField>
-        </Field>
-        <Field Name="Lot">
-          <DataField>Lot</DataField>
-        </Field>
-        <Field Name="Nonconformity_Description">
-          <DataField>Nonconformity_Description</DataField>
-        </Field>
-        <Field Name="Type_of_nonconformity">
-          <DataField>Type_of_nonconformity</DataField>
-        </Field>
-        <Field Name="Posting_Date">
-          <DataField>Posting_Date</DataField>
-        </Field>
-        <Field Name="Nonconformity_Reason">
-          <DataField>Nonconformity_Reason</DataField>
-        </Field>
-        <Field Name="Penalty">
-          <DataField>Penalty</DataField>
-        </Field>
-        <Field Name="Proposal_for_corrective_or_preventive_action">
-          <DataField>Proposal_for_corrective_or_preventive_action</DataField>
-        </Field>
-        <Field Name="Company_Name">
-          <DataField>Company_Name</DataField>
-        </Field>
-        <Field Name="Company_s_Email">
-          <DataField>Company_s_Email</DataField>
-        </Field>
-        <Field Name="Company_Phone_No_">
-          <DataField>Company_Phone_No_</DataField>
-        </Field>
-        <Field Name="Picture">
-          <DataField>Picture</DataField>
-        </Field>
-        <Field Name="Quantity">
-          <DataField>Quantity</DataField>
-        </Field>
-        <Field Name="EmployeeNo">
-          <DataField>EmployeeNo</DataField>
-        </Field>
-        <Field Name="Employee">
-          <DataField>Employee</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
