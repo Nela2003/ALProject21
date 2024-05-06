@@ -1,8 +1,9 @@
 table 50102 "Nonconformance Setup"
 {
     DataClassification = ToBeClassified;
+   
     
-   Caption = 'Seminar Setup';
+   Caption = 'Nonconformance Setup';
  fields
  {
  field(10;"Primary Key";Code[10])
@@ -13,7 +14,8 @@ table 50102 "Nonconformance Setup"
  field(20;"Nonconformance Nos.";Code[20])
  {
  Caption = 'Nonconformance Nos.';
- TableRelation = "No. Series".Code;
+ TableRelation = "No. Series";
+//  TableRelation="No. Series".Code;
  }
  field(30;"Posting Nonconformance Nos.";code[20])
  {

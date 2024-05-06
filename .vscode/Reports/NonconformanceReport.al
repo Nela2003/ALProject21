@@ -101,22 +101,23 @@ report 50100 "Nonconformance Report"
                       Test:Record "Employee test";
                       NonConformance:Record "NonConformance Doc Table";
            begin 
-CompInfo.SetRange(Name,'CRONUS International Ltd.');
-IF CompInfo.FindFirst() then begin 
+// CompInfo.SetRange(Name,'CRONUS International Ltd.');
+// IF CompInfo.FindFirst() then begin 
+     CompInfo.get();
     "NonConformance Doc Table"."Company Name":=CompInfo.Name;
     "NonConformance Doc Table"."Company Phone No.":=CompInfo."Phone No.";
     "NonConformance Doc Table"."Company's Email":=CompInfo."E-Mail";
     CompInfo.CalcFields(Picture);
     "NonConformance Doc Table".Picture :=CompInfo.Picture;
  
-end;
-   NonConformance.SetRange("No..","NonConformance Doc Table"."No..");
-   if NonConformance.FindFirst() then begin 
-          Nr:="NonConformance Doc Table"."No.."
+// end;
+//    NonConformance.SetRange("No..","NonConformance Doc Table"."No..");
+//    if NonConformance.FindFirst() then begin 
+//           Nr:="NonConformance Doc Table"."No.."
 
         end;
      
-           end;
+          //  end;
       
            
       
