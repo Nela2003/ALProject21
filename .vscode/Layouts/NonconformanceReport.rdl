@@ -1896,7 +1896,7 @@
             <ZIndex>61</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -1975,16 +1975,28 @@
                   <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
+              <Line Name="Line2">
+                <Top>1.50311cm</Top>
+                <Left>0cm</Left>
+                <Height>0cm</Height>
+                <Width>7.93041cm</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Line>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>0.31496cm</Top>
             <Left>5.94503cm</Left>
             <Height>2.47058cm</Height>
-            <Width>6.31469cm</Width>
+            <Width>7.93041cm</Width>
             <ZIndex>62</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
             </Style>
           </Rectangle>
@@ -2008,13 +2020,13 @@
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>0.31496cm</Top>
-            <Left>12.25972cm</Left>
+            <Left>13.91072cm</Left>
             <Height>2.47058cm</Height>
-            <Width>4.25028cm</Width>
+            <Width>5.78274cm</Width>
             <ZIndex>63</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -2226,18 +2238,6 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Line Name="Line2">
-            <Top>1.78279cm</Top>
-            <Left>5.94503cm</Left>
-            <Height>0cm</Height>
-            <Width>6.20885cm</Width>
-            <ZIndex>70</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
           <Image Name="Image2">
             <Source>Database</Source>
             <Value>=First(Fields!Picture.Value, "DataSet_Result")</Value>
@@ -2247,7 +2247,7 @@
             <Left>0.96103cm</Left>
             <Height>0.635cm</Height>
             <Width>4.43215cm</Width>
-            <ZIndex>71</ZIndex>
+            <ZIndex>70</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2428,7 +2428,7 @@
             <Left>0.76482cm</Left>
             <Height>1.19009cm</Height>
             <Width>6.95675cm</Width>
-            <ZIndex>72</ZIndex>
+            <ZIndex>71</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2440,7 +2440,7 @@
             <Left>0.21308cm</Left>
             <Height>0cm</Height>
             <Width>19.48038cm</Width>
-            <ZIndex>73</ZIndex>
+            <ZIndex>72</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -2452,7 +2452,7 @@
             <Left>4.41537cm</Left>
             <Height>0cm</Height>
             <Width>0.70419cm</Width>
-            <ZIndex>74</ZIndex>
+            <ZIndex>73</ZIndex>
             <Style>
               <Border>
                 <Style>Dashed</Style>
@@ -2476,7 +2476,7 @@
             <Left>0.21308cm</Left>
             <Height>0cm</Height>
             <Width>19.48038cm</Width>
-            <ZIndex>75</ZIndex>
+            <ZIndex>74</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
