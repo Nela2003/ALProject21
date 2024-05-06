@@ -179,7 +179,7 @@
           <Line Name="Line3">
             <Top>1.99388in</Top>
             <Left>0.08389in</Left>
-            <Height>-0.02778in</Height>
+            <Height>0in</Height>
             <Width>7.76944in</Width>
             <ZIndex>3</ZIndex>
             <Style>
@@ -2266,7 +2266,7 @@
             </Style>
           </Line>
         </ReportItems>
-        <Height>32.90184cm</Height>
+        <Height>27.67367cm</Height>
         <Style>
           <Border>
             <Style>Solid</Style>
